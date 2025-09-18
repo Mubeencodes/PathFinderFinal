@@ -4,9 +4,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { UserPlus, Mail, Lock, User, MapPin, GraduationCap, BookOpen } from "lucide-react";
+import {
+  UserPlus,
+  Mail,
+  Lock,
+  User,
+  MapPin,
+  GraduationCap,
+  BookOpen,
+} from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 
 interface FormData {
@@ -21,7 +35,7 @@ interface FormData {
 
 export default function Signup() {
   const { toast } = useToast();
-  const { login } = useAuth();
+  const { signUp } = useAuth();
   const navigate = useNavigate();
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -30,7 +44,7 @@ export default function Signup() {
     confirmPassword: "",
     class: "",
     stream: "",
-    location: ""
+    location: "",
   });
   const [errors, setErrors] = useState<Partial<FormData>>({});
 
@@ -73,24 +87,35 @@ export default function Signup() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (validateForm()) {
-      toast({
-        title: "Account created successfully!",
-        description: "Welcome to PathFinder. You can now start exploring your career options.",
-      });
-      // Auto-login for demo purposes
-      login(formData.email);
-      navigate("/quiz", { replace: true });
+      try {
+        await signUp({
+          username: formData.name,
+          email: formData.email,
+          password: formData.password,
+        });
+        toast({
+          title: "Account created successfully!",
+          description: "Welcome to PathFinder.",
+        });
+        navigate("/quiz", { replace: true });
+      } catch (err: any) {
+        toast({
+          title: "Signup failed",
+          description: err?.response?.data?.msg || "Please try again.",
+          variant: "destructive",
+        });
+      }
     }
   };
 
   const handleInputChange = (field: keyof FormData, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
     if (errors[field]) {
-      setErrors(prev => ({ ...prev, [field]: undefined }));
+      setErrors((prev) => ({ ...prev, [field]: undefined }));
     }
   };
 
@@ -102,11 +127,15 @@ export default function Signup() {
             <UserPlus className="h-8 w-8 text-primary-foreground" />
           </div>
           <div>
-            <CardTitle className="text-2xl font-bold text-foreground">Join PathFinder</CardTitle>
-            <p className="text-muted-foreground mt-2">Create your account to start your career journey</p>
+            <CardTitle className="text-2xl font-bold text-foreground">
+              Join PathFinder
+            </CardTitle>
+            <p className="text-muted-foreground mt-2">
+              Create your account to start your career journey
+            </p>
           </div>
         </CardHeader>
-        
+
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
@@ -119,10 +148,12 @@ export default function Signup() {
                 type="text"
                 placeholder="Enter your full name"
                 value={formData.name}
-                onChange={(e) => handleInputChange('name', e.target.value)}
-                className={errors.name ? 'border-destructive' : ''}
+                onChange={(e) => handleInputChange("name", e.target.value)}
+                className={errors.name ? "border-destructive" : ""}
               />
-              {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
+              {errors.name && (
+                <p className="text-sm text-destructive">{errors.name}</p>
+              )}
             </div>
 
             <div className="space-y-2">
@@ -135,10 +166,12 @@ export default function Signup() {
                 type="email"
                 placeholder="Enter your email"
                 value={formData.email}
-                onChange={(e) => handleInputChange('email', e.target.value)}
-                className={errors.email ? 'border-destructive' : ''}
+                onChange={(e) => handleInputChange("email", e.target.value)}
+                className={errors.email ? "border-destructive" : ""}
               />
-              {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
+              {errors.email && (
+                <p className="text-sm text-destructive">{errors.email}</p>
+              )}
             </div>
 
             <div className="grid grid-cols-2 gap-4">
@@ -152,25 +185,33 @@ export default function Signup() {
                   type="password"
                   placeholder="Create password"
                   value={formData.password}
-                  onChange={(e) => handleInputChange('password', e.target.value)}
-                  className={errors.password ? 'border-destructive' : ''}
+                  onChange={(e) =>
+                    handleInputChange("password", e.target.value)
+                  }
+                  className={errors.password ? "border-destructive" : ""}
                 />
-                {errors.password && <p className="text-sm text-destructive">{errors.password}</p>}
+                {errors.password && (
+                  <p className="text-sm text-destructive">{errors.password}</p>
+                )}
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="confirmPassword">
-                  Confirm Password
-                </Label>
+                <Label htmlFor="confirmPassword">Confirm Password</Label>
                 <Input
                   id="confirmPassword"
                   type="password"
                   placeholder="Confirm password"
                   value={formData.confirmPassword}
-                  onChange={(e) => handleInputChange('confirmPassword', e.target.value)}
-                  className={errors.confirmPassword ? 'border-destructive' : ''}
+                  onChange={(e) =>
+                    handleInputChange("confirmPassword", e.target.value)
+                  }
+                  className={errors.confirmPassword ? "border-destructive" : ""}
                 />
-                {errors.confirmPassword && <p className="text-sm text-destructive">{errors.confirmPassword}</p>}
+                {errors.confirmPassword && (
+                  <p className="text-sm text-destructive">
+                    {errors.confirmPassword}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -180,8 +221,13 @@ export default function Signup() {
                   <GraduationCap className="h-4 w-4" />
                   Class/Grade
                 </Label>
-                <Select value={formData.class} onValueChange={(value) => handleInputChange('class', value)}>
-                  <SelectTrigger className={errors.class ? 'border-destructive' : ''}>
+                <Select
+                  value={formData.class}
+                  onValueChange={(value) => handleInputChange("class", value)}
+                >
+                  <SelectTrigger
+                    className={errors.class ? "border-destructive" : ""}
+                  >
                     <SelectValue placeholder="Select class" />
                   </SelectTrigger>
                   <SelectContent>
@@ -194,7 +240,9 @@ export default function Signup() {
                     <SelectItem value="postgraduate">Post Graduate</SelectItem>
                   </SelectContent>
                 </Select>
-                {errors.class && <p className="text-sm text-destructive">{errors.class}</p>}
+                {errors.class && (
+                  <p className="text-sm text-destructive">{errors.class}</p>
+                )}
               </div>
 
               <div className="space-y-2">
@@ -202,8 +250,13 @@ export default function Signup() {
                   <BookOpen className="h-4 w-4" />
                   Stream
                 </Label>
-                <Select value={formData.stream} onValueChange={(value) => handleInputChange('stream', value)}>
-                  <SelectTrigger className={errors.stream ? 'border-destructive' : ''}>
+                <Select
+                  value={formData.stream}
+                  onValueChange={(value) => handleInputChange("stream", value)}
+                >
+                  <SelectTrigger
+                    className={errors.stream ? "border-destructive" : ""}
+                  >
                     <SelectValue placeholder="Select stream" />
                   </SelectTrigger>
                   <SelectContent>
@@ -214,7 +267,9 @@ export default function Signup() {
                     <SelectItem value="undecided">Undecided</SelectItem>
                   </SelectContent>
                 </Select>
-                {errors.stream && <p className="text-sm text-destructive">{errors.stream}</p>}
+                {errors.stream && (
+                  <p className="text-sm text-destructive">{errors.stream}</p>
+                )}
               </div>
             </div>
 
@@ -228,10 +283,12 @@ export default function Signup() {
                 type="text"
                 placeholder="Enter your location"
                 value={formData.location}
-                onChange={(e) => handleInputChange('location', e.target.value)}
-                className={errors.location ? 'border-destructive' : ''}
+                onChange={(e) => handleInputChange("location", e.target.value)}
+                className={errors.location ? "border-destructive" : ""}
               />
-              {errors.location && <p className="text-sm text-destructive">{errors.location}</p>}
+              {errors.location && (
+                <p className="text-sm text-destructive">{errors.location}</p>
+              )}
             </div>
 
             <Button type="submit" className="w-full">
@@ -242,7 +299,10 @@ export default function Signup() {
           <div className="mt-6 text-center">
             <p className="text-sm text-muted-foreground">
               Already have an account?{" "}
-              <Link to="/login" className="text-primary hover:underline font-medium">
+              <Link
+                to="/login"
+                className="text-primary hover:underline font-medium"
+              >
                 Sign in here
               </Link>
             </p>

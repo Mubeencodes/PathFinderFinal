@@ -1,14 +1,30 @@
-# Node.js dependencies
+# Node
 node_modules/
-
-# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Environment variables
+# Vite/Build
+dist/
+.vite/
+.cache/
+*.local
+
+# Env
 .env
+.env.local
+.env.*.local
 
-# Optional: OS files
+# Test/Coverage
+coverage/
+
+# OS/Editor
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# TypeScript
+*.tsbuildinfo

@@ -1,18 +1,27 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  TrendingUp, 
-  BookOpen, 
-  MapPin, 
+import {
+  TrendingUp,
+  BookOpen,
+  MapPin,
   Calendar,
   Award,
   Target,
   ArrowRight,
-  Bell
+  Bell,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { listReports, createReport, deleteReport } from "@/lib/api";
+import { supabase } from "@/lib/supabase";
 
 export default function Dashboard() {
   // Mock user data
@@ -33,15 +42,42 @@ export default function Dashboard() {
 
   const upcomingDeadlines = [
     { title: "JEE Main Registration", date: "Dec 15, 2024", type: "Exam" },
-    { title: "Delhi University Admission", date: "Jan 10, 2025", type: "College" },
-    { title: "Scholarship Application", date: "Dec 20, 2024", type: "Scholarship" },
+    {
+      title: "Delhi University Admission",
+      date: "Jan 10, 2025",
+      type: "College",
+    },
+    {
+      title: "Scholarship Application",
+      date: "Dec 20, 2024",
+      type: "Scholarship",
+    },
   ];
 
-  const recentActivity = [
-    { action: "Completed Aptitude Quiz", time: "2 hours ago" },
-    { action: "Viewed IIT Delhi Profile", time: "1 day ago" },
-    { action: "Downloaded Study Material", time: "3 days ago" },
-  ];
+  const [reports, setReports] = useState<
+    Array<{ id: string; title: string; content?: string }>
+  >([]);
+
+  useEffect(() => {
+    async function load() {
+      const { data } = await listReports();
+      setReports(data || []);
+    }
+    load();
+
+    const channel = supabase
+      .channel("reports-channel")
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "reports" },
+        () => load()
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, []);
 
   return (
     <div className="p-6 space-y-6 bg-background min-h-full">
@@ -66,7 +102,10 @@ export default function Dashboard() {
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold mb-2">{user.progress}%</div>
-            <Progress value={user.progress} className="mb-2 bg-primary-foreground/20" />
+            <Progress
+              value={user.progress}
+              className="mb-2 bg-primary-foreground/20"
+            />
             <p className="text-sm opacity-90">
               {user.completedTests} of {user.totalTests} assessments completed
             </p>
@@ -83,7 +122,11 @@ export default function Dashboard() {
           <CardContent>
             <div className="text-2xl font-bold mb-2">{user.stream}</div>
             <div className="text-lg opacity-90">{user.class}</div>
-            <Button variant="outline" size="sm" className="mt-2 border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10">
+            <Button
+              variant="outline"
+              size="sm"
+              className="mt-2 border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10"
+            >
               Update Profile
             </Button>
           </CardContent>
@@ -99,7 +142,12 @@ export default function Dashboard() {
           <CardContent>
             <div className="text-3xl font-bold mb-2">3</div>
             <p className="text-sm opacity-90 mb-2">New updates available</p>
-            <Button variant="outline" size="sm" asChild className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10">
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+              className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10"
+            >
               <Link to="/notifications">View All</Link>
             </Button>
           </CardContent>
@@ -120,7 +168,10 @@ export default function Dashboard() {
           </CardHeader>
           <CardContent className="space-y-4">
             {recommendations.map((rec, index) => (
-              <div key={index} className="flex items-center justify-between p-3 bg-muted rounded-lg">
+              <div
+                key={index}
+                className="flex items-center justify-between p-3 bg-muted rounded-lg"
+              >
                 <div>
                   <div className="font-medium text-foreground">{rec.title}</div>
                   <Badge variant="secondary" className="mt-1 text-xs">
@@ -128,7 +179,9 @@ export default function Dashboard() {
                   </Badge>
                 </div>
                 <div className="text-right">
-                  <div className="text-lg font-bold text-primary">{rec.match}%</div>
+                  <div className="text-lg font-bold text-primary">
+                    {rec.match}%
+                  </div>
                   <div className="text-xs text-muted-foreground">Match</div>
                 </div>
               </div>
@@ -154,15 +207,22 @@ export default function Dashboard() {
           </CardHeader>
           <CardContent className="space-y-4">
             {upcomingDeadlines.map((deadline, index) => (
-              <div key={index} className="flex items-center justify-between p-3 bg-muted rounded-lg">
+              <div
+                key={index}
+                className="flex items-center justify-between p-3 bg-muted rounded-lg"
+              >
                 <div>
-                  <div className="font-medium text-foreground">{deadline.title}</div>
+                  <div className="font-medium text-foreground">
+                    {deadline.title}
+                  </div>
                   <Badge variant="outline" className="mt-1 text-xs">
                     {deadline.type}
                   </Badge>
                 </div>
                 <div className="text-right">
-                  <div className="text-sm font-medium text-foreground">{deadline.date}</div>
+                  <div className="text-sm font-medium text-foreground">
+                    {deadline.date}
+                  </div>
                 </div>
               </div>
             ))}
@@ -181,7 +241,9 @@ export default function Dashboard() {
           <CardHeader className="text-center">
             <BookOpen className="h-12 w-12 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform" />
             <CardTitle className="text-lg">Study Materials</CardTitle>
-            <CardDescription>Access curated resources for your stream</CardDescription>
+            <CardDescription>
+              Access curated resources for your stream
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <Button asChild className="w-full">
@@ -226,9 +288,14 @@ export default function Dashboard() {
         <CardContent>
           <div className="space-y-3">
             {recentActivity.map((activity, index) => (
-              <div key={index} className="flex items-center justify-between py-2 border-b border-border last:border-0">
+              <div
+                key={index}
+                className="flex items-center justify-between py-2 border-b border-border last:border-0"
+              >
                 <span className="text-foreground">{activity.action}</span>
-                <span className="text-sm text-muted-foreground">{activity.time}</span>
+                <span className="text-sm text-muted-foreground">
+                  {activity.time}
+                </span>
               </div>
             ))}
           </div>
