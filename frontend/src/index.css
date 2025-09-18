@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PathFinder Design System - Student-focused career guidance platform */
+
+@layer base {
+  :root {
+    /* Core Background & Text Colors */
+    --background: 210 40% 98%;
+    --foreground: 217 19% 27%;
+
+    /* Card & Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 217 19% 27%;
+
+    /* Popover Colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 19% 27%;
+
+    /* Primary Brand Colors - Education Blue */
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 210 100% 95%;
+
+    /* Secondary Colors - Success Green */
+    --secondary: 162 73% 46%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-muted: 162 73% 95%;
+
+    /* Accent Colors - Energetic Orange */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+    --accent-muted: 25 95% 95%;
+
+    /* Neutral/Muted Colors */
+    --muted: 210 40% 96%;
+    --muted-foreground: 217 10% 45%;
+
+    /* Interactive States */
+    --hover: 210 40% 92%;
+    --active: 210 100% 50%;
+
+    /* Status Colors */
+    --success: 162 73% 46%;
+    --success-foreground: 0 0% 100%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 217 19% 27%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & Input */
+    --border: 210 40% 88%;
+    --input: 210 40% 96%;
+    --ring: 210 100% 56%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 56%), hsl(190 100% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(162 73% 46%), hsl(142 73% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%), hsl(45 95% 57%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 56%) 0%, hsl(190 100% 60%) 50%, hsl(162 73% 46%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(210 40% 88% / 0.4);
+    --shadow-medium: 0 4px 12px hsl(210 40% 88% / 0.5);
+    --shadow-strong: 0 8px 24px hsl(210 40% 88% / 0.6);
+    --shadow-glow: 0 0 20px hsl(210 100% 56% / 0.3);
+
+    /* Radius */
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Core Background & Text Colors */
+    --background: 217 19% 9%;
+    --foreground: 210 40% 95%;
+
+    /* Card & Surface Colors */
+    --card: 217 19% 12%;
+    --card-foreground: 210 40% 95%;
+
+    /* Popover Colors */
+    --popover: 217 19% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Primary Brand Colors */
+    --primary: 210 100% 62%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 210 100% 15%;
+
+    /* Secondary Colors */
+    --secondary: 162 73% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-muted: 162 73% 15%;
+
+    /* Accent Colors */
+    --accent: 25 95% 59%;
+    --accent-foreground: 0 0% 100%;
+    --accent-muted: 25 95% 15%;
+
+    /* Neutral/Muted Colors */
+    --muted: 217 19% 15%;
+    --muted-foreground: 217 10% 65%;
+
+    /* Interactive States */
+    --hover: 217 19% 18%;
+    --active: 210 100% 58%;
+
+    /* Status Colors */
+    --success: 162 73% 52%;
+    --success-foreground: 0 0% 100%;
+    --warning: 43 96% 62%;
+    --warning-foreground: 217 19% 9%;
+    --destructive: 0 84% 66%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & Input */
+    --border: 217 19% 20%;
+    --input: 217 19% 15%;
+    --ring: 210 100% 62%;
+
+    /* Sidebar Colors */
+    --sidebar-background: 217 19% 9%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 210 100% 62%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 19% 15%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 217 19% 20%;
+    --sidebar-ring: 210 100% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
