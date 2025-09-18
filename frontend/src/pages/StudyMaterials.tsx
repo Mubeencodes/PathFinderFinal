@@ -49,8 +49,8 @@ const studyMaterials: StudyMaterial[] = [
     downloads: 12500,
     description:
       "Comprehensive physics notes covering all topics for Class 12 CBSE curriculum",
-    url: "https://economics-hub.example.com",
-    author: "Dr. Rajesh Kumar",
+    url: "https://openstax.org/details/books/college-physics",
+    author: "OpenStax",
     difficulty: "Intermediate",
   },
   {
@@ -64,8 +64,8 @@ const studyMaterials: StudyMaterial[] = [
     duration: "12 hours",
     description:
       "Complete video series on organic chemistry with practical examples",
-    url: "https://economics-hub.example.com",
-    author: "Prof. Meera Sharma",
+    url: "https://www.khanacademy.org/science/organic-chemistry",
+    author: "Khan Academy",
     difficulty: "Advanced",
   },
   {
@@ -79,8 +79,8 @@ const studyMaterials: StudyMaterial[] = [
     duration: "8 hours",
     description:
       "Audio lectures covering business studies concepts and case studies",
-    url: "https://economics-hub.example.com",
-    author: "CA Amit Gupta",
+    url: "https://hbr.org/podcasts/ideacast",
+    author: "Harvard Business Review",
     difficulty: "Beginner",
   },
   {
@@ -93,8 +93,8 @@ const studyMaterials: StudyMaterial[] = [
     downloads: 7800,
     description:
       "In-depth analysis of major literary works and writing techniques",
-    url: "https://economics-hub.example.com",
-    author: "Prof. Sarah Johnson",
+    url: "https://www.sparknotes.com/writinghelp/how-to-write-literary-analysis/",
+    author: "Purdue OWL",
     difficulty: "Intermediate",
   },
   {
@@ -107,8 +107,8 @@ const studyMaterials: StudyMaterial[] = [
     downloads: 15200,
     duration: "20 hours",
     description: "Step-by-step solutions to complex mathematical problems",
-    url: "#https://economics-hub.example.com",
-    author: "Dr. Priya Singh",
+    url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+    author: "3Blue1Brown",
     difficulty: "Advanced",
   },
   {
@@ -121,8 +121,8 @@ const studyMaterials: StudyMaterial[] = [
     downloads: 3400,
     description:
       "Comprehensive online resource with interactive graphs and examples",
-    url: "https://economics-hub.example.com",
-    author: "Economics Institute",
+    url: "https://www.khanacademy.org/economics-finance-domain",
+    author: "Khan Academy",
     difficulty: "Intermediate",
   },
 ];
@@ -313,7 +313,7 @@ export default function StudyMaterials() {
                       onClick={() => window.open(material.url, "_blank")}
                     >
                       <Download className="h-4 w-4 mr-2" />
-                      Download
+                      Visit Resource
                     </Button>
                   )}
                   <Button size="sm" variant="outline">

@@ -10,7 +10,6 @@ import {
   MessageCircle,
   BarChart3,
   User,
-  Settings,
 } from "lucide-react";
 
 import {
@@ -40,7 +39,6 @@ const navigationItems = [
 
 const accountItemsAuthed = [
   { title: "Profile", url: "/profile", icon: User },
-  { title: "Settings", url: "/settings", icon: Settings },
   { title: "Logout", url: "/logout", icon: User },
 ];
 
@@ -79,9 +77,11 @@ export function AppSidebar() {
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink 
-                      to={item.url} 
-                      className={`${getNavClassName(item.url)} flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200 font-medium`}
+                    <NavLink
+                      to={item.url}
+                      className={`${getNavClassName(
+                        item.url
+                      )} flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200 font-medium`}
                     >
                       <item.icon className="h-5 w-5 flex-shrink-0" />
                       {state !== "collapsed" && <span>{item.title}</span>}
@@ -99,19 +99,23 @@ export function AppSidebar() {
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {(isAuthenticated ? accountItemsAuthed : accountItemsGuest).map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <NavLink 
-                      to={item.url} 
-                      className={`${getNavClassName(item.url)} flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200 font-medium`}
-                    >
-                      <item.icon className="h-5 w-5 flex-shrink-0" />
-                      {state !== "collapsed" && <span>{item.title}</span>}
-                    </NavLink>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
+              {(isAuthenticated ? accountItemsAuthed : accountItemsGuest).map(
+                (item) => (
+                  <SidebarMenuItem key={item.title}>
+                    <SidebarMenuButton asChild>
+                      <NavLink
+                        to={item.url}
+                        className={`${getNavClassName(
+                          item.url
+                        )} flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200 font-medium`}
+                      >
+                        <item.icon className="h-5 w-5 flex-shrink-0" />
+                        {state !== "collapsed" && <span>{item.title}</span>}
+                      </NavLink>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                )
+              )}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>

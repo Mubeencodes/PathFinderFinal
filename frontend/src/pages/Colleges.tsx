@@ -1,10 +1,34 @@
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useEffect, useState } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { MapPin, Search, Star, GraduationCap, Users, Phone, Globe, Clock } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  MapPin,
+  Search,
+  Star,
+  GraduationCap,
+  Users,
+  Phone,
+  Globe,
+  Clock,
+} from "lucide-react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 
 interface College {
   id: number;
@@ -12,7 +36,7 @@ interface College {
   location: string;
   distance: string;
   rating: number;
-  type: 'Government' | 'Private';
+  type: "Government" | "Private";
   courses: string[];
   fees: string;
   admissionDeadline: string;
@@ -36,9 +60,9 @@ const mockColleges: College[] = [
     admissionDeadline: "June 30, 2024",
     contact: {
       phone: "+91-11-2766-7000",
-      website: "www.mirandahouse.ac.in"
+      website: "www.mirandahouse.ac.in",
     },
-    facilities: ["Library", "Hostel", "Sports Complex", "Wi-Fi"]
+    facilities: ["Library", "Hostel", "Sports Complex", "Wi-Fi"],
   },
   {
     id: 2,
@@ -52,9 +76,9 @@ const mockColleges: College[] = [
     admissionDeadline: "June 15, 2024",
     contact: {
       phone: "+91-11-2659-1000",
-      website: "www.iitd.ac.in"
+      website: "www.iitd.ac.in",
     },
-    facilities: ["Research Labs", "Hostel", "Sports Complex", "Medical Center"]
+    facilities: ["Research Labs", "Hostel", "Sports Complex", "Medical Center"],
   },
   {
     id: 3,
@@ -68,9 +92,14 @@ const mockColleges: College[] = [
     admissionDeadline: "July 15, 2024",
     contact: {
       phone: "+91-120-4392-500",
-      website: "www.amity.edu"
+      website: "www.amity.edu",
     },
-    facilities: ["Modern Campus", "Industry Partnerships", "Placement Cell", "International Programs"]
+    facilities: [
+      "Modern Campus",
+      "Industry Partnerships",
+      "Placement Cell",
+      "International Programs",
+    ],
   },
   {
     id: 4,
@@ -84,10 +113,15 @@ const mockColleges: College[] = [
     admissionDeadline: "June 25, 2024",
     contact: {
       phone: "+91-11-2698-1717",
-      website: "www.jmi.ac.in"
+      website: "www.jmi.ac.in",
     },
-    facilities: ["Central Library", "Hostels", "Medical Center", "Sports Facilities"]
-  }
+    facilities: [
+      "Central Library",
+      "Hostels",
+      "Medical Center",
+      "Sports Facilities",
+    ],
+  },
 ];
 
 export default function Colleges() {
@@ -95,27 +129,55 @@ export default function Colleges() {
   const [streamFilter, setStreamFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
   const [filteredColleges, setFilteredColleges] = useState(mockColleges);
+  const [userPosition, setUserPosition] = useState<[number, number] | null>(
+    null
+  );
+  const [geoError, setGeoError] = useState<string | null>(null);
+
+  // Fix Leaflet marker icons in bundlers
+  // @ts-ignore
+  delete (L.Icon.Default.prototype as any)._getIconUrl;
+  L.Icon.Default.mergeOptions({
+    iconRetinaUrl:
+      "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+    iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  });
+
+  useEffect(() => {
+    if (!navigator.geolocation) {
+      setGeoError("Geolocation not supported in this browser.");
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setUserPosition([pos.coords.latitude, pos.coords.longitude]);
+      },
+      (err) => setGeoError(err.message || "Unable to get your location"),
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  }, []);
 
   const handleSearch = () => {
     let filtered = mockColleges;
 
     if (searchLocation) {
-      filtered = filtered.filter(college => 
+      filtered = filtered.filter((college) =>
         college.location.toLowerCase().includes(searchLocation.toLowerCase())
       );
     }
 
     if (streamFilter !== "all") {
-      filtered = filtered.filter(college => 
-        college.courses.some(course => 
+      filtered = filtered.filter((college) =>
+        college.courses.some((course) =>
           course.toLowerCase().includes(streamFilter.toLowerCase())
         )
       );
     }
 
     if (typeFilter !== "all") {
-      filtered = filtered.filter(college => 
-        college.type.toLowerCase() === typeFilter.toLowerCase()
+      filtered = filtered.filter(
+        (college) => college.type.toLowerCase() === typeFilter.toLowerCase()
       );
     }
 
@@ -127,12 +189,47 @@ export default function Colleges() {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <MapPin className="h-8 w-8 text-primary" />
-          <h1 className="text-3xl font-bold text-foreground">Find Colleges Near You</h1>
+          <h1 className="text-3xl font-bold text-foreground">
+            Find Colleges Near You
+          </h1>
         </div>
         <p className="text-muted-foreground text-lg">
-          Discover the best colleges in your area with detailed information and requirements
+          Discover the best colleges in your area with detailed information and
+          requirements
         </p>
       </div>
+
+      {/* User Location Map */}
+      <Card className="shadow-medium mb-8">
+        <CardHeader>
+          <CardTitle className="text-foreground">Your Location</CardTitle>
+          <CardDescription>
+            {userPosition
+              ? "Showing your current location on the map"
+              : geoError || "Requesting location..."}
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="h-[420px] w-full rounded-md overflow-hidden">
+            <MapContainer
+              center={userPosition || [20.5937, 78.9629]}
+              zoom={userPosition ? 13 : 5}
+              scrollWheelZoom
+              style={{ height: "100%", width: "100%" }}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              {userPosition && (
+                <Marker position={userPosition}>
+                  <Popup>You are here</Popup>
+                </Marker>
+              )}
+            </MapContainer>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Search and Filter Section */}
       <Card className="shadow-medium mb-8">
@@ -185,21 +282,26 @@ export default function Colleges() {
         <h2 className="text-xl font-semibold text-foreground mb-2">
           Found {filteredColleges.length} colleges
         </h2>
-        <p className="text-muted-foreground">
-          Based on your search criteria
-        </p>
+        <p className="text-muted-foreground">Based on your search criteria</p>
       </div>
 
       {/* College List */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {filteredColleges.map((college) => (
-          <Card key={college.id} className="shadow-medium hover:shadow-strong transition-shadow">
+          <Card
+            key={college.id}
+            className="shadow-medium hover:shadow-strong transition-shadow"
+          >
             <CardHeader>
               <div className="flex justify-between items-start mb-2">
                 <CardTitle className="text-xl text-foreground leading-tight">
                   {college.name}
                 </CardTitle>
-                <Badge variant={college.type === 'Government' ? 'default' : 'secondary'}>
+                <Badge
+                  variant={
+                    college.type === "Government" ? "default" : "secondary"
+                  }
+                >
                   {college.type}
                 </Badge>
               </div>
@@ -222,7 +324,9 @@ export default function Colleges() {
               <div>
                 <div className="flex items-center gap-2 mb-2">
                   <GraduationCap className="h-4 w-4 text-primary" />
-                  <span className="font-medium text-foreground">Courses Offered:</span>
+                  <span className="font-medium text-foreground">
+                    Courses Offered:
+                  </span>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {college.courses.map((course, index) => (
@@ -240,20 +344,28 @@ export default function Colleges() {
                     <Users className="h-4 w-4 text-secondary" />
                     <span className="font-medium text-foreground">Fees:</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">{college.fees}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {college.fees}
+                  </p>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <Clock className="h-4 w-4 text-accent" />
-                    <span className="font-medium text-foreground">Deadline:</span>
+                    <span className="font-medium text-foreground">
+                      Deadline:
+                    </span>
                   </div>
-                  <p className="text-sm text-muted-foreground">{college.admissionDeadline}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {college.admissionDeadline}
+                  </p>
                 </div>
               </div>
 
               {/* Facilities */}
               <div>
-                <span className="font-medium text-foreground mb-2 block">Key Facilities:</span>
+                <span className="font-medium text-foreground mb-2 block">
+                  Key Facilities:
+                </span>
                 <div className="flex flex-wrap gap-2">
                   {college.facilities.map((facility, index) => (
                     <Badge key={index} variant="secondary" className="text-xs">
@@ -282,9 +394,7 @@ export default function Colleges() {
                 <Button variant="outline" className="flex-1">
                   View Details
                 </Button>
-                <Button className="flex-1">
-                  Apply Now
-                </Button>
+                <Button className="flex-1">Apply Now</Button>
               </div>
             </CardContent>
           </Card>
@@ -295,9 +405,12 @@ export default function Colleges() {
         <Card className="text-center py-12">
           <CardContent>
             <MapPin className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-            <CardTitle className="text-xl text-foreground mb-2">No colleges found</CardTitle>
+            <CardTitle className="text-xl text-foreground mb-2">
+              No colleges found
+            </CardTitle>
             <CardDescription>
-              Try adjusting your search criteria or expanding your location range
+              Try adjusting your search criteria or expanding your location
+              range
             </CardDescription>
           </CardContent>
         </Card>

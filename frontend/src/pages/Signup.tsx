@@ -19,7 +19,6 @@ import {
   User,
   MapPin,
   GraduationCap,
-  BookOpen,
 } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 
@@ -75,9 +74,7 @@ export default function Signup() {
       newErrors.class = "Please select your class";
     }
 
-    if (!formData.stream) {
-      newErrors.stream = "Please select your stream";
-    }
+    // stream no longer required / field hidden
 
     if (!formData.location.trim()) {
       newErrors.location = "Location is required";
@@ -231,13 +228,7 @@ export default function Signup() {
                     <SelectValue placeholder="Select class" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="8th">8th Grade</SelectItem>
-                    <SelectItem value="9th">9th Grade</SelectItem>
-                    <SelectItem value="10th">10th Grade</SelectItem>
-                    <SelectItem value="11th">11th Grade</SelectItem>
                     <SelectItem value="12th">12th Grade</SelectItem>
-                    <SelectItem value="graduate">Graduate</SelectItem>
-                    <SelectItem value="postgraduate">Post Graduate</SelectItem>
                   </SelectContent>
                 </Select>
                 {errors.class && (
@@ -245,32 +236,7 @@ export default function Signup() {
                 )}
               </div>
 
-              <div className="space-y-2">
-                <Label className="flex items-center gap-2">
-                  <BookOpen className="h-4 w-4" />
-                  Stream
-                </Label>
-                <Select
-                  value={formData.stream}
-                  onValueChange={(value) => handleInputChange("stream", value)}
-                >
-                  <SelectTrigger
-                    className={errors.stream ? "border-destructive" : ""}
-                  >
-                    <SelectValue placeholder="Select stream" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="science">Science</SelectItem>
-                    <SelectItem value="commerce">Commerce</SelectItem>
-                    <SelectItem value="arts">Arts/Humanities</SelectItem>
-                    <SelectItem value="vocational">Vocational</SelectItem>
-                    <SelectItem value="undecided">Undecided</SelectItem>
-                  </SelectContent>
-                </Select>
-                {errors.stream && (
-                  <p className="text-sm text-destructive">{errors.stream}</p>
-                )}
-              </div>
+              {/* Stream selection removed */}
             </div>
 
             <div className="space-y-2">

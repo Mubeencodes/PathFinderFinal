@@ -20,10 +20,12 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { listReports, createReport, deleteReport } from "@/lib/api";
+import { listReports } from "@/lib/api";
 import { supabase } from "@/lib/supabase";
+import { useAuth } from "@/hooks/use-auth";
 
 export default function Dashboard() {
+  const { profile } = useAuth();
   // Mock user data
   const user = {
     name: "Alex Student",
@@ -54,28 +56,48 @@ export default function Dashboard() {
     },
   ];
 
+  const recentActivity = [
+    { action: "Logged in", time: "just now" },
+    { action: "Viewed dashboard", time: "just now" },
+  ];
+
   const [reports, setReports] = useState<
     Array<{ id: string; title: string; content?: string }>
   >([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
     async function load() {
-      const { data } = await listReports();
-      setReports(data || []);
+      try {
+        setIsLoading(true);
+        setLoadError(null);
+        const { data } = await listReports();
+        setReports(data || []);
+      } catch (e: any) {
+        setLoadError(e?.response?.data?.msg || "Failed to load data");
+      } finally {
+        setIsLoading(false);
+      }
     }
     load();
 
-    const channel = supabase
-      .channel("reports-channel")
-      .on(
-        "postgres_changes",
-        { event: "*", schema: "public", table: "reports" },
-        () => load()
-      )
-      .subscribe();
+    let channel: any;
+    try {
+      channel = supabase
+        .channel("reports-channel")
+        .on(
+          "postgres_changes",
+          { event: "*", schema: "public", table: "reports" },
+          () => load()
+        )
+        .subscribe();
+    } catch {}
 
     return () => {
-      supabase.removeChannel(channel);
+      try {
+        if (channel) supabase.removeChannel(channel);
+      } catch {}
     };
   }, []);
 
@@ -84,7 +106,9 @@ export default function Dashboard() {
       {/* Welcome Section */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-foreground mb-2">
-          Welcome back, {user.name}! 👋
+          Welcome back,{" "}
+          {profile?.username || profile?.fullname || profile?.email || "Friend"}
+          ! 👋
         </h1>
         <p className="text-muted-foreground text-lg">
           Here's your personalized career guidance dashboard
@@ -116,12 +140,14 @@ export default function Dashboard() {
           <CardHeader className="pb-2">
             <CardTitle className="text-lg flex items-center gap-2">
               <Award className="h-5 w-5" />
-              Current Stream
+              Profile
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold mb-2">{user.stream}</div>
-            <div className="text-lg opacity-90">{user.class}</div>
+            <div className="text-2xl font-bold mb-2">
+              {profile?.username || "—"}
+            </div>
+            <div className="text-lg opacity-90">{profile?.email || "—"}</div>
             <Button
               variant="outline"
               size="sm"
