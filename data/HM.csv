@@ -1,0 +1,545 @@
+College_Name,State,Stream,UG_fee,PG_fee,Rating,Academic,Accommodation,Faculty,Infrastructure,Placement,Social_Life
+Institute Of Hotel Management Catering Technology And,Tamil Nadu,Hotel-Management,654,670,8.5,8.5,7.9,8.8,8.6,9.2,8
+"Srm Institute Of Hotel Management, Chennai",Tamil Nadu,Hotel-Management,654,670,9.4,9.3,8.5,9.7,9.4,9.9,9.5
+"Sri Krishna Arts And Science College, Coimbatore",Tamil Nadu,Hotel-Management,654,670,8.5,8.6,7.8,8.6,8.9,8.7,8.5
+"Sri Ramakrishna College Of Arts And Science,",Tamil Nadu,Hotel-Management,654,670,8.2,8.2,7.3,8.7,7.7,8.2,8.8
+Dr. Sns Rajalakshmi College Of Arts And,Tamil Nadu,Hotel-Management,654,670,8,8.3,7,8,8.3,8.4,7.7
+Bishop Appasamy College Of Arts And Science,Tamil Nadu,Hotel-Management,654,670,7.9,8.3,7.3,8.8,8,7.8,7
+V.L.B. Janakiammal College Of Arts And Science,Tamil Nadu,Hotel-Management,654,670,6.6,7,6.7,6.8,6.6,6.1,6.3
+"Psg College Of Arts And Science, Coimbatore",Tamil Nadu,Hotel-Management,654,670,8.3,8.5,7.9,8.2,8.5,8.2,8.7
+Srm Institute Of Technology,Tamil Nadu,Hotel-Management,654,670,8,8,7.1,7.6,8.7,8.2,8.6
+"Cms College Of Science And Commerce, Coimbatore",Tamil Nadu,Hotel-Management,654,670,8.2,8.3,7.4,8.1,8.5,8,8.7
+Jamal Mohamed College,Tamil Nadu,Hotel-Management,654,670,8.5,8.8,8.1,8.5,8.6,8.4,8.6
+"Kalasalingam Academy Of Research And Education, Krishnankovil",Tamil Nadu,Hotel-Management,654,670,7.7,8,7.4,7.9,8.3,7,7.6
+"Nehru Arts And Science College -[Nasc], Coimbatore",Tamil Nadu,Hotel-Management,654,670,8.4,8.4,7.6,8.4,8.7,8.6,8.5
+"Vels Institute Of Science, Technology & Advanced",Tamil Nadu,Hotel-Management,654,670,8.1,8.4,7.5,8.4,8.1,7.8,8.3
+"Mohamed Sathak College Of Arts And Science,",Tamil Nadu,Hotel-Management,654,670,7.9,8,7.9,8.3,7.7,7.3,8
+"Merit Swiss Asian School Of Hotel Management,",Tamil Nadu,Hotel-Management,654,670,7.7,8,7,8,7,7,9
+"Dr. M.G.R. Educational And Research Institute, Chennai",Tamil Nadu,Hotel-Management,654,670,7.4,7.6,7.4,7.1,7.8,6.8,7.5
+"Hindusthan College Of Arts And Science- [Hicas],",Tamil Nadu,Hotel-Management,654,670,7.5,7.7,6.5,7.4,8.4,7.5,7.3
+"Alagappa University, Karaikudi",Tamil Nadu,Hotel-Management,654,670,8.5,8.9,7.9,8.9,8.4,8.2,8.4
+Avinashilingam Institute For Home Science And Higher,Tamil Nadu,Hotel-Management,654,670,7.9,8.3,6.9,8.3,8.3,7.7,8
+Empee Institute Of Hotel Management And Catering,Tamil Nadu,Hotel-Management,654,670,8.8,8,7.4,8.2,8,7.5,8.1
+Mgr Institute Of Hotel Management And Catering,Tamil Nadu,Hotel-Management,654,670,7.3,8.5,4,8.5,6.5,8.5,7.5
+"Ssm College Of Arts And Science, Namakkal",Tamil Nadu,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Bharath University,Tamil Nadu,Hotel-Management,654,670,7.6,7.9,7.1,8.1,7.6,7.8,7
+Benson College Of Hotel Management And Culinary,Tamil Nadu,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Subbalakshmi Lakshmipathy College Of Science, Madurai",Tamil Nadu,Hotel-Management,654,670,7.8,8.5,8,7,8.8,7.3,7
+Indian School Of Business Management And Administration,Tamil Nadu,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+All India Institute Of Management Studies,Tamil Nadu,Hotel-Management,654,670,9.3,9.3,9.7,9,9.3,9.3,9
+"Valluvar College Of Science And Management, Karur",Tamil Nadu,Hotel-Management,654,670,7.9,7.5,7.5,9,8,7.8,7.5
+All India Institute Of Technology And Management,Tamil Nadu,Hotel-Management,654,670,7,8.3,6.3,7.7,7.3,5.3,7.3
+Institute Of Hotel Management Catering Technology And,Maharashtra,Hotel-Management,654,670,7.9,8.3,7.2,8.5,7.3,8.4,7.9
+"Dy Patil University, Navi Mumbai",Maharashtra,Hotel-Management,654,670,7.5,7.3,7.1,7.7,7.5,7.4,7.8
+"Bharati Vidyapeeth University, Institute Of Hotel Management",Maharashtra,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Bharati Vidyapeeth College Of Hotel And Tourism,Maharashtra,Hotel-Management,654,670,9.7,8.2,7.4,8.2,8,7.5,8.1
+Aissms College Of Hotel Management & Catering,Maharashtra,Hotel-Management,654,670,8,9,6.3,8.3,8,8.6,7.8
+Dr. Dy Patil Institute Of Hotel Management,Maharashtra,Hotel-Management,654,670,7.3,8,6.5,7.3,7.3,7.4,7.3
+Itm Institute Of Hotel Management,Maharashtra,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Savitribai Phule Pune University,Maharashtra,Hotel-Management,654,670,7.6,8.1,7.1,7.9,7.9,6.8,7.5
+St Andrew'S College Of Arts Science And,Maharashtra,Hotel-Management,654,670,8.2,8.4,7.2,8.3,8.6,7.6,8.8
+Mumbai University,Maharashtra,Hotel-Management,654,670,7.2,7.6,6.5,7.9,7.4,6.6,7
+Rashtrasant Tukadoji Maharaj Nagpur University,Maharashtra,Hotel-Management,654,670,7.5,8,7.2,7.7,7.9,6.9,7.4
+"Dr. Bmn College Of Home Science, Mumbai",Maharashtra,Hotel-Management,654,670,7.6,8.4,6.2,8.2,8.8,7,6.8
+Bharati Vidyapeeth Deemed University,Maharashtra,Hotel-Management,654,670,7.8,8.1,6.8,7.9,8.1,7.7,8.2
+"Kapol Vidyanidhi College Of Management And Technology,",Maharashtra,Hotel-Management,654,670,8.5,9,5.5,9.5,8,7.5,8.1
+Kohinoor International Management Institute,Maharashtra,Hotel-Management,654,670,8.5,8.7,7.7,9,8,8.3,9.3
+Shivaji University,Maharashtra,Hotel-Management,654,670,7.6,7.9,7.2,8.1,8.1,6.3,8
+Sinhgad Institute Of Hotel Management & Catering,Maharashtra,Hotel-Management,654,670,8.4,9,8,8,9,8,8.1
+"Ecole Hoteliere Lavasa, Pune",Maharashtra,Hotel-Management,654,670,3.7,8.2,7.4,5,8,5,1
+Shri Balasaheb Tirpude College Of Hotel Management,Maharashtra,Hotel-Management,654,670,7,8,4.7,7.7,7.5,6.8,7.3
+"Sophia Polytechnic, Mumbai",Maharashtra,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Shreemati Nathibai Damodar Thackersey Women'S University,Maharashtra,Hotel-Management,654,670,7.6,8.2,6.9,8,7.8,7,7.7
+"Dina Institute Of Hotel Management Hadapsar, Pune",Maharashtra,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Itm Institute Of Hotel Management,Maharashtra,Hotel-Management,654,670,8.6,8,8.3,9.3,7.7,9.3,9
+Suryadatta College Of Hospitality Management And Travel,Maharashtra,Hotel-Management,654,670,8.5,8.5,7.2,9.1,8.4,8.9,8.8
+Arun Muchhala International College Of Hotel Managment,Maharashtra,Hotel-Management,654,670,7,7,7.4,8.2,7,7,8.1
+Ajeenkya Dy Patil University,Maharashtra,Hotel-Management,654,670,7.7,7.4,7.1,7.9,8.4,7.1,8.3
+Tilak Maharashtra Vidyapeeth,Maharashtra,Hotel-Management,654,670,7.1,7.8,6.8,7.3,7.2,6.1,7.1
+Indian Institute Of Business Management And Studies,Maharashtra,Hotel-Management,654,670,8.9,9.4,8.8,8.8,9.2,8.8,8.3
+Trade-Wings Institute Of Management,Maharashtra,Hotel-Management,654,670,7.6,7.3,7.7,7.7,7.7,7.7,7.3
+Chhatrapati Shivaji Maharaj University,Maharashtra,Hotel-Management,654,670,9,8.6,9.3,9.3,9,8.4,9.3
+"Institute Of Hotel Management, Catering & Nutrition",Uttar Pradesh,Hotel-Management,654,670,8.5,8.7,8.5,8.9,8.3,8.5,8
+"Amity University, Lucknow",Uttar Pradesh,Hotel-Management,654,670,8.1,8,7.6,8.1,8.8,7.1,8.8
+Heritage Institute Of Hotel And Tourism,Uttar Pradesh,Hotel-Management,654,670,7,6.7,6.7,7,7.7,7.3,6.7
+Sanskriti University,Uttar Pradesh,Hotel-Management,654,670,7,7.2,6.7,7,7.5,6.9,6.8
+Banaras Hindu University,Uttar Pradesh,Hotel-Management,654,670,8.3,8.7,8.1,8.4,8.8,7.2,8.6
+"Amity University, Noida",Uttar Pradesh,Hotel-Management,654,670,8.2,8,7.9,8.1,8.9,7.6,8.7
+"Institute Of Management Studies, Banaras Hindu University,",Uttar Pradesh,Hotel-Management,654,670,8.5,8.5,8,8.8,8.2,8.3,9
+Institute Of Hotel Management Catering Technology And,Uttar Pradesh,Hotel-Management,654,670,8.8,9,8.4,8.7,9.4,8.6,8.5
+Ewing Christian College,Uttar Pradesh,Hotel-Management,654,670,7,8.2,5.7,7.9,7.5,5.1,7.8
+"Chm Institute Of Hotel And Business Management,",Uttar Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Jp Institute Of Hotel Management & Catering,Uttar Pradesh,Hotel-Management,654,670,7.9,8.3,8,9,8,6.3,8
+"Sams Institute Of Hotel Management, Varanasi",Uttar Pradesh,Hotel-Management,654,670,8.4,8.5,9,8,8,8.5,8.5
+Chhatrapati Shahu Ji Maharaj University,Uttar Pradesh,Hotel-Management,654,670,7.1,7.2,6.6,7.5,8,5.8,7.7
+J.S. University,Uttar Pradesh,Hotel-Management,654,670,8.5,8.5,7.8,8.7,9,8.2,8.6
+"Monad University, Hapur",Uttar Pradesh,Hotel-Management,654,670,8,7.6,7.4,8.5,8,8.2,8.1
+Aihm Institute Of Tourism And Hotel Management,Uttar Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Galgotias University,Uttar Pradesh,Hotel-Management,654,670,7.6,7.9,6.9,7.9,7.5,7.7,7.8
+"Integral University, Lucknow",Uttar Pradesh,Hotel-Management,654,670,7.4,7.6,7.3,7.4,8,6.5,7.4
+"Iftm University, Moradabad",Uttar Pradesh,Hotel-Management,654,670,7.8,7.9,7.5,8.1,8,6.8,8.3
+Babu Banarasi Das University,Uttar Pradesh,Hotel-Management,654,670,7.6,7.7,7.1,7.5,8.4,6.6,8.1
+"Iimt Group Of Colleges, Greater Noida",Uttar Pradesh,Hotel-Management,654,670,8.5,8.7,8,8.8,8.6,8.1,8.8
+"Amity University, Greater Noida",Uttar Pradesh,Hotel-Management,654,670,8.1,8.2,7.7,7.9,8.6,8.2,8.1
+Iimt University,Uttar Pradesh,Hotel-Management,654,670,7.4,7.4,7.3,7.6,7.5,7.2,7.1
+"Srmist Delhi Ncr Campus, Ghaziabad",Uttar Pradesh,Hotel-Management,654,670,7.7,7.9,7,7.7,7.8,8.1,7.8
+"Mohammad Ali Jauhar University, Rampur",Uttar Pradesh,Hotel-Management,654,670,7.6,8,8.3,7.6,9,5.4,7.4
+Delhi Technical Campus,Uttar Pradesh,Hotel-Management,654,670,6.9,7.4,6.4,7.2,7.1,6.2,7.2
+Shri Ram Group Of Colleges,Uttar Pradesh,Hotel-Management,654,670,7.9,8.3,7.4,8.3,8.4,7.1,8
+"Iec Group Of Institutions, Greater Noida",Uttar Pradesh,Hotel-Management,654,670,7,7.3,6.8,7.3,7.3,6.2,7.1
+Sunder Deep Group Of Institutions,Uttar Pradesh,Hotel-Management,654,670,8.9,9.2,8.5,9.5,9.1,8.5,8.8
+"Institute Of Hotel Management, Catering And Nutrition",Delhi Ncr,Hotel-Management,654,670,8.2,8.7,7.4,8.5,7.6,8.9,7.8
+Banarsidas Chandiwala Institute Of Hotel Management &,Delhi Ncr,Hotel-Management,654,670,8.9,9.2,8.2,9.2,9.3,8.7,9
+State Institute Of Hotel Management,Delhi Ncr,Hotel-Management,654,670,8.4,8.4,7.8,8.7,8.5,8.7,8.5
+"Uei Global Rohini, New Delhi",Delhi Ncr,Hotel-Management,654,670,7.2,7.8,6,7.7,6.9,7.3,7.4
+"Jamia Millia Islamia University-[Jmi], New Delhi",Delhi Ncr,Hotel-Management,654,670,8,8.4,7.6,8.3,8.4,7.2,8.2
+"Jamia Hamdard University, New Delhi",Delhi Ncr,Hotel-Management,654,670,7.5,8.1,7.3,7.8,8.1,6.5,7.4
+Guru Gobind Singh Indraprastha University,Delhi Ncr,Hotel-Management,654,670,7.8,8.1,7.5,8,8.1,6.9,8.1
+Maharshi Dayanand University,Delhi Ncr,Hotel-Management,654,670,7.8,8,7.7,8,8.4,6.6,8
+"Amity University, Noida",Delhi Ncr,Hotel-Management,654,670,8.2,8,7.9,8.1,8.9,7.6,8.7
+Institute Of Hotel Management Catering Technology And,Delhi Ncr,Hotel-Management,654,670,8.8,9,8.4,8.7,9.4,8.6,8.5
+"Chm Institute Of Hotel And Business Management,",Delhi Ncr,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Faculty Of Management Studies, Manav Rachna International",Delhi Ncr,Hotel-Management,654,670,8.7,8.2,7.4,9,8,8,9
+Jp Institute Of Hotel Management & Catering,Delhi Ncr,Hotel-Management,654,670,7.9,8.3,8,9,8,6.3,8
+"Srm University Delhi Ncr, Sonepat",Delhi Ncr,Hotel-Management,654,670,7.8,8,7.5,7.9,8.1,7.6,7.9
+"Indian Hotel Academy-[Iha], New Delhi",Delhi Ncr,Hotel-Management,654,670,8,8.2,7.4,8,8,8,8
+"Monad University, Hapur",Delhi Ncr,Hotel-Management,654,670,8,7.6,7.4,8.5,8,8.2,8.1
+Galgotias University,Delhi Ncr,Hotel-Management,654,670,7.6,7.9,6.9,7.9,7.5,7.7,7.8
+"Amity University, Gurgaon",Delhi Ncr,Hotel-Management,654,670,7.7,7.8,7.1,7.6,8.6,7.1,8.1
+Manav Rachna International Institute Of Research And,Delhi Ncr,Hotel-Management,654,670,7.5,7.4,7.3,7.5,8.3,6.6,7.6
+"Starex University, Gurgaon",Delhi Ncr,Hotel-Management,654,670,8.8,9.1,9.1,8.7,8.6,8.5,8.7
+"Iimt Group Of Colleges, Greater Noida",Delhi Ncr,Hotel-Management,654,670,8.5,8.7,8,8.8,8.6,8.1,8.8
+"Amity University, Greater Noida",Delhi Ncr,Hotel-Management,654,670,8.1,8.2,7.7,7.9,8.6,8.2,8.1
+Iimt University,Delhi Ncr,Hotel-Management,654,670,7.4,7.4,7.3,7.6,7.5,7.2,7.1
+"Sushant University / Ansal University, Gurgaon",Delhi Ncr,Hotel-Management,654,670,7.8,8,8,7.9,8.4,7,7.5
+"Srmist Delhi Ncr Campus, Ghaziabad",Delhi Ncr,Hotel-Management,654,670,7.7,7.9,7,7.7,7.8,8.1,7.8
+Jagannath Institute Of Management Sciences,Delhi Ncr,Hotel-Management,654,670,8.4,8.7,7.2,9.3,8.7,8.5,8.1
+G D Goenka University,Delhi Ncr,Hotel-Management,654,670,8.2,7.7,8.3,8.3,8.9,7.6,8.4
+Andhra Loyola College,Andhra Pradesh,Hotel-Management,654,670,8,8.5,7.4,8.5,8.6,7,8.2
+Acharya Nagarjuna University,Andhra Pradesh,Hotel-Management,654,670,7.3,7.7,7,7.2,8,5.7,8.2
+Gems B School,Andhra Pradesh,Hotel-Management,654,670,9.1,9.5,8.5,9.5,9,9,9
+"Risali Institute Of Management, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,8.4,8.2,8.3,8.3,8.8,8.4,8.4
+Sun International Institute For Tourism & Management-,Andhra Pradesh,Hotel-Management,654,670,7.9,8.4,7.3,7.5,7.8,8.5,7.7
+Alwar School Of Business,Andhra Pradesh,Hotel-Management,654,670,8,8,8,8,8,6.8,9
+Sun International Institute For Tourism And Management,Andhra Pradesh,Hotel-Management,654,670,9.4,9.7,9.7,9.7,9.7,8.7,8.7
+Siddhartha Institute Of Hotel Management And Catering,Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Andhra University,Andhra Pradesh,Hotel-Management,654,670,7.9,8.3,7.1,8.3,7.9,7.4,8.1
+Krishna University,Andhra Pradesh,Hotel-Management,654,670,7.7,8.3,7.1,8.4,7.3,7.5,7.8
+"Acharya Nagarjuna University, Centre For Distance Education",Andhra Pradesh,Hotel-Management,654,670,7.5,8.3,6.9,8,7.6,7,7.1
+"Alliance College Of Management And Hotel Management,",Andhra Pradesh,Hotel-Management,654,670,8.9,8.3,8.7,9.7,8.8,8.3,9.3
+"Aditya Degree College, Rajahmundhry",Andhra Pradesh,Hotel-Management,654,670,8.1,8.5,7.7,8.9,7.2,7.9,8.2
+State Institute Of Hotel Management Catering Technology,Andhra Pradesh,Hotel-Management,654,670,8.7,8.8,8.3,8.5,9,9,8.3
+"St. Joseph'S College For Women, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,8.2,9,7,8.3,8.3,8.3,8.1
+"Chanakya Institute Of Hotel Management & Ct,",Andhra Pradesh,Hotel-Management,654,670,6.8,9,7,9,7,3,6
+Indus Institute Of Hotel Management,Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Sumedha Institute Of Aviation And Hotel Management,",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Techmate Institute Of Aviation, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Twinkle International Hotel Management Academy,Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Flying Cats, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,6.3,7,6,6,6,7,6
+"I Fly Academy, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Akbar Academy Of Airline Studies, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,7.2,8,7,7,8,7,6
+"Varnika Hotel Management & Business Management, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Frankfinn Institute Of Air Hostess Training, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,8.6,8.2,7.2,9.2,8.8,9,9
+"Imperial College Of Hotel Management & Tourism,",Andhra Pradesh,Hotel-Management,654,670,7.5,7,7,8,8,8,7
+"Southern International Hotel Management Academy, Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Food Craft Institute-[Fci], Visakhapatnam",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Central Tribal University Of A.P-[Ctuap ], Vizianagaram",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Shangrila Institute Of Hotel Management And Aviation,",Andhra Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management,Karnataka,Hotel-Management,654,670,8.2,8.8,7.6,9,6.8,8.6,8.4
+Welcomgroup Graduate School Of Hotel Administration,Karnataka,Hotel-Management,654,670,8.8,8.7,8.3,8.6,8.7,9.1,9.3
+Army Institute Of Hotel Management & Catering,Karnataka,Hotel-Management,654,670,8.1,8.3,7.3,8.3,8.3,8,8.5
+"Christ University, Bangalore",Karnataka,Hotel-Management,654,670,8.3,8.5,7.4,8.2,8.9,8.1,8.8
+"Aims Institutes, Bangalore",Karnataka,Hotel-Management,654,670,7.3,7.8,6.6,8.1,6.5,7.2,7.3
+T John College,Karnataka,Hotel-Management,654,670,8,8.1,7.8,8.1,8.5,7.6,7.8
+Kle Society'S S. Nijalingappa College,Karnataka,Hotel-Management,654,670,7.5,8,6.2,8.1,8.1,6.7,8
+Garden City University,Karnataka,Hotel-Management,654,670,7.8,7.7,7.5,7.8,8.2,7.3,8.5
+International Institute Of Hotel Management,Karnataka,Hotel-Management,654,670,8.1,7.9,7.4,8.3,8.4,8.8,7.9
+Manipal Academy Of Higher Education,Karnataka,Hotel-Management,654,670,8.4,8.5,8.2,8.6,8.8,7.8,8.4
+Administrative Management College,Karnataka,Hotel-Management,654,670,5.5,5.6,4.9,5.3,6.9,4.4,5.7
+Pes University,Karnataka,Hotel-Management,654,670,8,8.5,7.7,8.1,8.1,8.1,7.6
+T John Institute Of Management And Science,Karnataka,Hotel-Management,654,670,8.1,8.5,7.5,8.5,8,7.8,8.3
+"Shree Devi College Of Hotel Management, Mangalore",Karnataka,Hotel-Management,654,670,8.2,8.2,7.4,8.2,8,7.5,8.1
+Kle Society'S Institute Of Hotel Management And,Karnataka,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Sarosh Institute Of Hotel Administration,Karnataka,Hotel-Management,654,670,7.8,8.3,6.9,8.2,7.8,7.8,7.8
+Sambhram College Of Hotel Management,Karnataka,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Osteen College, Bangalore",Karnataka,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Gems B School,Karnataka,Hotel-Management,654,670,8.2,8.7,7.7,8.8,7.9,8.7,7.5
+"Srinivas University, Mangalore",Karnataka,Hotel-Management,654,670,8.2,8.7,7.1,8.6,8.2,8.1,8.7
+Faculty Of Hospitality Management And Catering Technology,Karnataka,Hotel-Management,654,670,8.3,8.7,7,8.7,9.7,7.7,8
+Indian School Of Business Management And Administration,Karnataka,Hotel-Management,654,670,9.2,9.6,7.8,9.8,9.8,9.2,9.2
+M.S. Ramaiah University Of Applied Sciences,Karnataka,Hotel-Management,654,670,7.6,8.2,6.3,8.2,7.9,7.2,7.8
+"Sjes College Of Management Studies, Bangalore",Karnataka,Hotel-Management,654,670,7.6,8.1,7.4,7.5,7.3,7.3,7.8
+Institute Of Clinical Research,Karnataka,Hotel-Management,654,670,8.6,9,8.3,9,8.7,8.7,8
+"The Oxford College Of Hotel Management, Bangalore",Karnataka,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Xaviers Institute Of Business Management Studies,Karnataka,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Ecr Group Of Institutions,Karnataka,Hotel-Management,654,670,7.2,7.7,6,7.8,7.3,7.2,7.4
+National Institute Of Retail Management,Karnataka,Hotel-Management,654,670,8.7,9.5,8.3,8.8,8.3,9,8.5
+Advanced Management College,Karnataka,Hotel-Management,654,670,7.6,8,7,8.7,7.7,6.7,7.7
+Institute Of Hotel Management Catering Technology &,Telangana,Hotel-Management,654,670,8.4,8.4,8,8.5,8.4,8.6,8.2
+Dr. Ysr National Institute Of Tourism And,Telangana,Hotel-Management,654,670,8.5,9.2,7.8,8.5,9,8,8.6
+Pioneer Institute Of Hotel Management,Telangana,Hotel-Management,654,670,8.1,8.3,7.3,8.7,7.7,8,8.3
+Indian School Of Business Management And Administration,Telangana,Hotel-Management,654,670,6.9,7.1,6.8,6.8,7.1,6.8,6.7
+David Memorial Business School,Telangana,Hotel-Management,654,670,7,6.8,6.8,7.3,6.8,6.9,7.3
+Integrated Institute Of Education Technology,Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Sun International Institute For Tourism And Management,Telangana,Hotel-Management,654,670,7.8,7.7,7.4,7.9,7.6,8.1,8.1
+"Risali Institute Of Management, Hyderabad",Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Leo Academy Of Hospitality And Tourism Management,Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Flytech Aviation Academy, Secunderabad",Telangana,Hotel-Management,654,670,8.4,8.8,7.8,9.4,8.8,7.8,7.6
+Culinary Academy Of India,Telangana,Hotel-Management,654,670,9.5,9.7,9.2,9.7,9.7,9.7,9.2
+"Gesto Culinary & Hospitality Academy, Secunderabad",Telangana,Hotel-Management,654,670,9.1,9.3,8.3,8.2,8,7.5,8.1
+Indian Institute Of Hotel Management And Culinary,Telangana,Hotel-Management,654,670,8.3,8.4,7.5,8.6,8.2,9.3,7.8
+"Roots Collegium, Hyderabad",Telangana,Hotel-Management,654,670,7,7.5,6.3,7.6,6.7,6.9,7.2
+Satavahana University,Telangana,Hotel-Management,654,670,8,8.2,7.3,7.9,8.2,8.3,7.9
+International Institute Of Hotel Management,Telangana,Hotel-Management,654,670,7.1,7.2,6.6,7.4,6.1,7.7,7.3
+Pinnacle Institute Of Hotel Management And Catering,Telangana,Hotel-Management,654,670,8.6,9.2,6.5,8.9,9,9.4,8.3
+"Institute Of Hotel Management Shri Shakti- [Ihm],",Telangana,Hotel-Management,654,670,9,9.5,8.8,9,9.5,9.3,8
+John Bauer College Of Hotel Management And,Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Trinity College Of Hotel Management, Hyderabad",Telangana,Hotel-Management,654,670,8.8,8,9,8,9,9,8.1
+State Institute Of Hotel Management,Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Greek Wings Institute Of Hotel Management, Hyderabad",Telangana,Hotel-Management,654,670,9.7,8.2,7.4,8.2,8,7.5,8.1
+"Vainavi Educational Institutions, Hyderabad",Telangana,Hotel-Management,654,670,8.5,8,8,8.2,8,7.5,8.1
+Aims College Of Hotel Management & Catering,Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Excellency Group Of Institutions, Hyderabad",Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Blooms College Of Hotel Management And Catering,Telangana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Westin College Of Hotel Management, Hyderabad",Telangana,Hotel-Management,654,670,8.9,9.3,8.9,8.9,8.7,8.8,8.9
+Institute Of Hotel Management,Madhya Pradesh,Hotel-Management,654,670,8.3,8.5,8.2,8.9,8.5,8.3,7.6
+Institute Of Hotel Management,Madhya Pradesh,Hotel-Management,654,670,8.3,7.9,8.2,8.8,7.5,8.8,8.3
+Institute For Excellence In Higher Education,Madhya Pradesh,Hotel-Management,654,800,7.2,7.9,6.5,7.9,7,6.7,7.4
+Awadhesh Pratap Singh University,Madhya Pradesh,Hotel-Management,654,670,7.1,7.9,6.5,8.1,7.2,5.3,7.3
+Jagran Lakecity University,Madhya Pradesh,Hotel-Management,654,670,8,8,7.9,7.8,8.6,7.4,8.1
+Lnct University,Madhya Pradesh,Hotel-Management,654,670,9,9,8.8,9.3,8.8,8.9,8.9
+Sardar Patel University,Madhya Pradesh,Hotel-Management,654,670,7.9,7.9,7.4,8.4,8,7.7,8
+Shri Krishna University,Madhya Pradesh,Hotel-Management,654,670,8.1,8.1,7.4,8.3,8.5,8,8
+"People'S University, Bhopal",Madhya Pradesh,Hotel-Management,654,670,7,6.7,6.6,7.5,7.2,6.6,7.4
+"Swami Vivekanand University, Sagar",Madhya Pradesh,Hotel-Management,654,670,6.3,6.9,5,7,6.4,5.6,6.6
+Pioneer Institute Of Professional Studies,Madhya Pradesh,Hotel-Management,654,670,7,7.5,5.9,8.6,6.8,5.4,7.6
+Bhabha University,Madhya Pradesh,Hotel-Management,654,670,9,9.4,8.8,9,9.3,8.7,8.9
+"Panache Academy, Indore",Madhya Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+P.K. University,Madhya Pradesh,Hotel-Management,654,670,9.3,8.2,7.4,8.2,8,7.5,8.1
+"Mansarovar Group Of Institutions, Bhopal",Madhya Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Ips Academy, Indore",Madhya Pradesh,Hotel-Management,654,670,7.6,7.7,7.1,7.5,8,7.2,7.8
+Indian School Of Business Management And Administration,Madhya Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Central India Institute Of Management Studies,Madhya Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Swastika Institute Of Higher Education And Technology,Madhya Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Radha Krishan Institute Of Technology & Management,Madhya Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Institute Of Industrial Management For Safety, Health",Madhya Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Arihant Education Group, Indore",Madhya Pradesh,Hotel-Management,654,670,7.8,8.1,7.7,8.2,7.9,7,8.1
+Jiwaji University,Madhya Pradesh,Hotel-Management,654,670,6.6,6.8,6.7,6.7,7.1,5.5,6.5
+Vikram University,Madhya Pradesh,Hotel-Management,654,670,6.7,7.6,6.2,7.3,6.9,5,7.2
+Sri Satya Sai University Of Technology &,Madhya Pradesh,Hotel-Management,654,670,8.3,8.3,8.3,8.3,8.7,7.9,8.5
+Kothari College Of Management Science & Technology,Madhya Pradesh,Hotel-Management,654,670,6.7,7,6,9,6,5,7
+State Institute Of Hotel Management,Madhya Pradesh,Hotel-Management,654,670,8.3,8.8,7.8,8.5,8,8.5,8.3
+"Oriental School Of Hotel Management Lakkidi, Wayanad",Kerala,Hotel-Management,654,670,7.5,8.3,7,7.6,7.1,8.1,6.7
+Munnar Catering College,Kerala,Hotel-Management,654,670,9,8.2,7.4,8.2,8,7.5,8.1
+Mahatma Gandhi University,Kerala,Hotel-Management,654,670,7.7,8,7.5,8,8,6.2,8.2
+Calicut University,Kerala,Hotel-Management,654,670,7,7.5,6.2,7.5,7.4,5.4,7.9
+"Christ College Irinjalakuda, Thrissur",Kerala,Hotel-Management,654,670,8,8.3,7.7,8.2,8.4,7.2,8.3
+Holy Grace Academy Of Management Studies,Kerala,Hotel-Management,654,670,8.5,8.7,8.3,8.3,8.5,8.2,9
+Apj Abdul Kalam Technological University,Kerala,Hotel-Management,654,670,7.8,8.1,6.9,8.2,8.1,7.5,8
+Yuvakshetra Institute Of Management Studies,Kerala,Hotel-Management,654,670,6.9,7.7,5.8,6.8,8,6.5,6.7
+State Institute Of Hospitality Management,Kerala,Hotel-Management,654,670,7.8,8.5,6.8,8,7.3,8.8,7.3
+Holy Cross Institute Of Management And Technology,Kerala,Hotel-Management,654,670,8.1,8.3,7.7,8.3,9,7.7,7.3
+Indian School Of Business Management And Administration,Kerala,Hotel-Management,654,670,9.2,9.7,9.7,9.3,9.3,9,8.3
+International Academy For Management Studies,Kerala,Hotel-Management,654,670,8.6,9,7.7,9.3,8,8.7,8.7
+"A.J. College Of Science And Technology Thonnakkal,",Kerala,Hotel-Management,654,670,7.4,8.2,6.5,8.8,7.8,5.6,7.5
+De Paul Institute Of Management Development,Kerala,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Chavara Institute Of Management And Media Studies-[Cimams],",Kerala,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Divine College Of Management Studies,Kerala,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Amal College Of Advanced Studies, Nilambur, Nilambur",Kerala,Hotel-Management,654,670,7.9,8.6,7,8.9,8,6.6,8.4
+"St Thomas College Ranny, Pathanamthitta",Kerala,Hotel-Management,654,670,7.1,8.1,6.6,8.1,7.7,4.6,7.6
+"Angelblues Aviation And Tourism Academy, Kochi",Kerala,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management And Catering Technology,Kerala,Hotel-Management,654,670,8.4,8.9,7.4,8.5,8.6,8.8,8.3
+Lourdes Matha Institute Of Hotel Management And,Kerala,Hotel-Management,654,670,7.8,8,7.5,8,7.3,8.8,7
+Naipunnya Institute Of Management And Information Technology,Kerala,Hotel-Management,654,670,8.2,8.4,7.4,8.7,8.7,7.8,8.1
+"Sree Narayana Guru Memorial Catering College, Alappuzha",Kerala,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"St. Alphonsa College Of Hotel Management Studies,",Kerala,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+St. Joseph'S Institute Of Hotel Management &,Kerala,Hotel-Management,654,670,8.5,8,7.4,8.2,8,7.5,8.1
+"Marian College Kuttikanam, Peermade",Kerala,Hotel-Management,654,670,8.9,8.9,8.6,8.8,9.1,8.9,8.9
+International College For New Age Studies,Kerala,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Kerala University,Kerala,Hotel-Management,654,670,6.3,7.5,4.8,7.2,6.6,5.1,6.3
+"Nirmala College Of Arts And Science, Chalakkudy,",Kerala,Hotel-Management,654,670,6.6,6.9,5.5,7.2,6.1,6.8,7.1
+"Government Arts And Science College, Kondotty, Malappuram",Kerala,Hotel-Management,654,670,6,8,3.5,7.5,5.5,5,6.5
+"Institute Of Hotel Management, Catering Technology &",Rajasthan,Hotel-Management,654,670,8.4,8.4,8.2,8.6,8.1,8.5,8.6
+Jaipur National University,Rajasthan,Hotel-Management,654,670,7.5,7.9,7,7.7,7.8,6.7,7.6
+International Institute Of Hotel Management,Rajasthan,Hotel-Management,654,670,8.5,8.6,8.2,8.4,8.4,8.8,8.3
+"Institute Of Hotel Management, Jodhpur, Jodhpur",Rajasthan,Hotel-Management,654,670,8,8,7.6,8,8.2,8.1,8
+Institute Of Hotel Management And Catering,Rajasthan,Hotel-Management,654,670,8.4,8.5,8.5,8.5,7.5,8.8,8.8
+Madhav University,Rajasthan,Hotel-Management,654,670,7.8,7.9,7.5,8.2,7.9,7.3,7.8
+Janardan Rai Nagar Rajasthan Vidyapeeth University,Rajasthan,Hotel-Management,654,670,7.8,8.3,7.5,8.3,7.9,7.3,7.5
+"Amity University, Jaipur",Rajasthan,Hotel-Management,654,670,8,7.8,7.6,7.8,8.9,7.4,8.7
+"Nims University, Jaipur",Rajasthan,Hotel-Management,654,670,7.8,7.9,7.2,7.9,8.5,7,8
+Mewar University,Rajasthan,Hotel-Management,654,670,8,7.9,7.1,8.1,8.8,7.3,8.6
+"Singhania University, Jhunjhunu",Rajasthan,Hotel-Management,654,670,7.1,7.1,6.7,7.1,7.1,7,7.3
+Manipal University,Rajasthan,Hotel-Management,654,670,8.4,8.2,8.3,8.2,9.2,7.7,9
+"Tantia University, Sriganganagar",Rajasthan,Hotel-Management,654,670,8.6,8.8,8.4,9.3,8.8,7.1,9.1
+Jecrc University,Rajasthan,Hotel-Management,654,670,8.1,8.1,7.4,8.2,8.2,8.1,8.7
+"Opjs University, Churu",Rajasthan,Hotel-Management,654,670,7.2,7.1,7.6,7.6,7.7,6.3,6.8
+"Apex University, Jaipur",Rajasthan,Hotel-Management,654,670,8.7,8.9,8.9,8.6,8.7,8.5,8.7
+Suresh Gyan Vihar University,Rajasthan,Hotel-Management,654,670,7.5,7.8,6.7,7.5,8.8,6.3,8
+"Jagannath University, Jaipur",Rajasthan,Hotel-Management,654,670,7.3,7.1,6.7,7.9,7.7,6.9,7.4
+"Pacific University, Udaipur",Rajasthan,Hotel-Management,654,670,7.7,7.8,7.3,8.1,7.8,7.2,8
+"Ips Business School, Jaipur",Rajasthan,Hotel-Management,654,670,8.3,8.5,8.3,8.3,7.7,8.4,8.7
+Jagdishprasad Jhabarmal Tibrewala University,Rajasthan,Hotel-Management,654,670,6.5,6.3,6.4,6.4,6.6,6.5,6.6
+"Shyam University, Dausa",Rajasthan,Hotel-Management,654,670,8.5,8.9,8.6,8.5,8.6,8.1,8.4
+"Shridhar University, Pilani",Rajasthan,Hotel-Management,654,670,6.7,6.2,6.6,6.5,6.5,7.3,6.8
+University Of Engineering And Management,Rajasthan,Hotel-Management,654,670,8.3,8.5,8.3,8.2,8.1,8.4,8
+Sangam University,Rajasthan,Hotel-Management,654,670,7.2,7.3,6.7,7.8,7.4,7,7
+"Bhagwant University, Ajmer",Rajasthan,Hotel-Management,654,670,6.7,6.8,6,7.1,6.5,6.8,7.2
+University Of Technology,Rajasthan,Hotel-Management,654,670,8.5,8.2,7.4,8.6,8,8.6,8.3
+Dr.Ambedkar Institute Of Hotel Management Catering And,Haryana,Hotel-Management,654,670,8.4,8.8,7.7,8.8,8.4,8.7,7.7
+Chandigarh Institute Of Hotel Management And Catering,Haryana,Hotel-Management,654,670,8.3,8.8,8.3,7.9,8.9,8.7,7
+"Chitkara School Of Hospitality -[Csh], Chandigarh",Haryana,Hotel-Management,654,670,8.4,8.7,7,9,8.3,8.7,8.5
+Hotel & Catering Management Institute,Haryana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+State Institute Of Hotel Management,Haryana,Hotel-Management,654,670,8.4,8.4,7.8,8.7,8.5,8.7,8.5
+Panjab University,Haryana,Hotel-Management,654,670,7.7,8.2,7.7,8,7.7,6.5,8.2
+Maharshi Dayanand University,Haryana,Hotel-Management,654,670,7.8,8,7.7,8,8.4,6.6,8
+Kurukshetra University,Haryana,Hotel-Management,654,670,7.5,8.1,7,8,7.7,6.5,7.7
+"Faculty Of Management Studies, Manav Rachna International",Haryana,Hotel-Management,654,670,8.7,8.2,7.4,9,8,8,9
+"Srm University Delhi Ncr, Sonepat",Haryana,Hotel-Management,654,670,7.8,8,7.5,7.9,8.1,7.6,7.9
+Mm Institute Of Hotel Management And Catering,Haryana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Amity University, Gurgaon",Haryana,Hotel-Management,654,670,7.7,7.8,7.1,7.6,8.6,7.1,8.1
+Manav Rachna International Institute Of Research And,Haryana,Hotel-Management,654,670,7.5,7.4,7.3,7.5,8.3,6.6,7.6
+"Starex University, Gurgaon",Haryana,Hotel-Management,654,670,8.8,9.1,9.1,8.7,8.6,8.5,8.7
+"Niilm University, Kaithal",Haryana,Hotel-Management,654,670,8.1,8.6,7.9,8.5,7.9,7.8,8.1
+"Sushant University / Ansal University, Gurgaon",Haryana,Hotel-Management,654,670,7.8,8,8,7.9,8.4,7,7.5
+G D Goenka University,Haryana,Hotel-Management,654,670,8.2,7.7,8.3,8.3,8.9,7.6,8.4
+"Vedatya Institute, Gurgaon",Haryana,Hotel-Management,654,670,8.5,8.7,8.1,8.6,8.4,8.4,8.5
+"Jagannath University, Bahadurgarh",Haryana,Hotel-Management,654,670,8,8.3,8,7.8,8.7,7.4,7.9
+"Rawal Institutions, Faridabad",Haryana,Hotel-Management,654,670,7.1,6.9,7.1,6.7,8.5,6.1,7
+"Sgt University, Gurgaon",Haryana,Hotel-Management,654,670,8,8,7.6,8.1,8.4,7.5,8.1
+Geeta Group Of Institutions,Haryana,Hotel-Management,654,670,9.2,9.4,8.8,9.3,9.4,9.2,9.3
+Indian Institute Of Learning And Advanced Development,Haryana,Hotel-Management,654,670,6.6,5,5,7.3,7,8,7
+Rp Inderaprastha Institute Of Technology,Haryana,Hotel-Management,654,670,7.1,7.7,6.5,7.5,7.6,6.1,6.9
+"Iitt Institutions, Chandigarh",Haryana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Rawal Institute Of Management,Haryana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Gateway Education, Sonepat",Haryana,Hotel-Management,654,670,9.7,8.2,7.4,8.2,8,7.5,8.1
+"Saheed Mahilal Institute, Palwal",Haryana,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management,Gujarat,Hotel-Management,654,670,8.3,8.8,8,8.9,8.1,8.1,7.6
+International Institute Of Hotel Management,Gujarat,Hotel-Management,654,670,8,8.6,7.8,8.2,8,7.8,7.6
+Maharaja Sayajirao University Of Baroda,Gujarat,Hotel-Management,654,670,7.9,8.3,7,8.4,8,7.2,8.4
+Times Business School,Gujarat,Hotel-Management,654,670,8.1,8,7,8.5,8,8,9
+Vivekanand Institute Of Hotel And Tourism Management,Gujarat,Hotel-Management,654,670,8.7,8,9,9,9,9,8
+Indian School Of Business Management And Administration,Gujarat,Hotel-Management,654,670,8,8.8,7.6,8.1,8,7.9,7.8
+"Auro University, Surat",Gujarat,Hotel-Management,654,670,8.3,8.2,8.5,8.6,8.7,7.2,8.6
+Ganpat University,Gujarat,Hotel-Management,654,670,8.1,8.2,7.2,8.1,8.5,7.8,8.6
+Asia Pacific Institute Of Management,Gujarat,Hotel-Management,654,670,6.8,7.7,6,7.3,6.3,6.3,7.3
+"Panache Academy, Ahmedabad",Gujarat,Hotel-Management,654,670,7.4,8,7,7.5,7.5,7.5,7
+"Lords Institute Of Management, Surat",Gujarat,Hotel-Management,654,670,7.3,8.2,7.4,8,8,7,7
+Cambay Institute Of Hospitality Management,Gujarat,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Vivekanand Institute Of Management,Gujarat,Hotel-Management,654,670,8.8,8,8,9,9,7.5,8.1
+"Swarrnim Startup & Innovation University, Gandhi Nagar",Gujarat,Hotel-Management,654,670,6.5,7,6,6.6,6.5,5.6,7.4
+Sanskar Institute Of Management & Information Techonogy,Gujarat,Hotel-Management,654,670,8.2,9,7,8,9,7,9
+Gujarat Institute Of Management,Gujarat,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Western India Institute Of Aeronautics,Gujarat,Hotel-Management,654,670,8.5,9,8,9,8,9,8
+"Jindal School Of Hotel Management -[Jshm], Vadodara",Gujarat,Hotel-Management,654,670,7.6,7.3,7.5,7.8,8.1,7.7,7.4
+Aptech Aviation And Hospitality Academy,Gujarat,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Gujarat Institute Of Hotel Management, Vadodara",Gujarat,Hotel-Management,654,670,7.2,6.8,6.3,8.5,6.8,7.8,7
+Parul Institute Of Hotel Management & Catering,Gujarat,Hotel-Management,654,670,8.8,8.5,7.5,9.5,9.5,8,8.1
+Gujarat Technological University,Gujarat,Hotel-Management,654,670,7.4,8.1,6.5,7.6,8,6.9,7.2
+Bhakta Kavi Narsinh Mehta University,Gujarat,Hotel-Management,654,670,8.8,9.3,9,8.6,8.7,8.8,8.5
+"Panache Academy, Vadodara",Gujarat,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Bhagwan Mahavir University,Gujarat,Hotel-Management,654,670,9.7,8.2,7.4,8.2,8,7.5,8.1
+"Birsa Munda Tribal University, Rajpipala",Gujarat,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Dr.Ambedkar Institute Of Hotel Management Catering And,Punjab,Hotel-Management,654,670,8.4,8.8,7.7,8.8,8.4,8.7,7.7
+Institute Of Hotel Management,Punjab,Hotel-Management,654,670,8.8,8.9,9,9,8.7,8.9,8.5
+Chandigarh Institute Of Hotel Management And Catering,Punjab,Hotel-Management,654,670,8.3,8.8,8.3,7.9,8.9,8.7,7
+"Chitkara School Of Hospitality -[Csh], Chandigarh",Punjab,Hotel-Management,654,670,8.4,8.7,7,9,8.3,8.7,8.5
+Hotel & Catering Management Institute,Punjab,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Chandigarh College Of Hotel Management And Catering,Punjab,Hotel-Management,654,670,9.5,9,9,8.2,8,7.5,8.1
+Ct Institute Of Hotel Management & Catering,Punjab,Hotel-Management,654,670,7,5,5,8.2,8,7.5,8.1
+Panjab University,Punjab,Hotel-Management,654,670,7.7,8.2,7.7,8,7.7,6.5,8.2
+"Ct Institute Of Hotel Management, Jalandhar",Punjab,Hotel-Management,654,670,5.3,6,5,5,6,3,7
+Desh Bhagat Institute Of Hotel Management &,Punjab,Hotel-Management,654,670,7.8,8,8,7,9,7,8
+Institute Of Hotel Management Catering Technology And,Punjab,Hotel-Management,654,670,8.1,8.2,6.6,9,7.2,8.5,9
+I.K. Gujral Punjab Technical University,Punjab,Hotel-Management,654,670,8.1,8,7.4,8.7,8.3,7.7,8.7
+"Doaba College, Jalandhar",Punjab,Hotel-Management,654,670,8.7,9.1,8.4,9.4,8.6,8.1,8.5
+"Rimt University, Gobindgarh",Punjab,Hotel-Management,654,670,7.6,7.9,7.3,7.8,8,6.7,7.8
+Surya School Of Hotel Management And Catering,Punjab,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Guru Kashi University, Bathinda",Punjab,Hotel-Management,654,670,7.5,7.4,7.2,8,7.2,7.2,7.8
+Chandigarh Group Of Colleges,Punjab,Hotel-Management,654,670,8.1,8,7.4,8,8.3,8.6,8.4
+"Rayat Bahra University, Mohali",Punjab,Hotel-Management,654,670,7.7,7.8,7.4,8,7.7,7.4,7.6
+"Gna University, Phagwara",Punjab,Hotel-Management,654,670,7.7,8,7.6,7.9,7.8,7.2,7.7
+Global Institute Of Management,Punjab,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Global Institute, Amritsar",Punjab,Hotel-Management,654,670,8.3,8,8.2,8.7,8.8,7.9,8.3
+Ct University,Punjab,Hotel-Management,654,670,8.8,8.9,8.5,8.7,9.3,8.8,8.5
+"Maharaja Ranjit Singh Punjab Technical University, Bathinda",Punjab,Hotel-Management,654,670,8.2,8.6,7.8,8.4,8.2,8.1,8.2
+Dav Institute Of Engineering And Technology,Punjab,Hotel-Management,654,670,7.2,7.7,7.2,7.6,7.1,6.7,7.1
+"Pcte Group Of Institutes, Ludhiana",Punjab,Hotel-Management,654,670,7.7,8,7.2,8,8,6.8,8.3
+Amritsar Group Of Colleges,Punjab,Hotel-Management,654,670,8.8,8.7,8.9,9,8.8,8.6,9
+"Ct Group Of Institutions, Jalandhar",Punjab,Hotel-Management,654,670,7.6,7.5,7,8.2,7.5,7.9,7.4
+"Rayat Bahra Hoshiarpur Campus, Hoshiarpur",Punjab,Hotel-Management,654,670,8.9,9.2,8.5,9.2,8.3,8.8,9.1
+Punjab College Of Technical Education,Punjab,Hotel-Management,654,670,8,7.7,8.1,7.9,8.3,7.1,8.8
+Institute Of Hotel Management Catering Technology &,West Bengal,Hotel-Management,654,670,8.7,8.9,8.5,9.2,8.1,8.8,8.6
+"Nshm Knowledge Campus, Durgapur",West Bengal,Hotel-Management,654,670,8.3,8.5,8.1,8.6,8.6,7.7,8.5
+Guru Nanak Institute Of Hotel Management,West Bengal,Hotel-Management,654,670,8,8.3,7.3,8,8.2,8.4,7.9
+"Nimas, Kolkata",West Bengal,Hotel-Management,654,670,8.8,9.7,9,8.6,9.5,7.4,8.4
+International Institute Of Hotel Management,West Bengal,Hotel-Management,654,670,8.8,8.7,8.1,8.9,8.8,8.9,9.3
+"Bng Hotel Management, Kolkata",West Bengal,Hotel-Management,654,670,7.8,8,7.5,7.9,7.5,7.9,7.8
+"Nshm Knowledge Campus, Kolkata",West Bengal,Hotel-Management,654,670,7.8,8,6.8,8.1,8.2,7.7,8
+"Annex College, Kolkata",West Bengal,Hotel-Management,654,670,7.9,7.7,8.3,8.3,7.8,7.5,8
+Institute Of Management Study,West Bengal,Hotel-Management,654,670,7.3,7.8,6.4,7.7,7.6,7.3,6.8
+Eastern Institute For Integrated Learning In Management,West Bengal,Hotel-Management,654,670,7.5,7.6,6.6,7.5,7.4,8.1,7.6
+Maulana Abul Kalam Azad University Of Technology,West Bengal,Hotel-Management,654,670,7.7,8.1,6.9,8,7.8,7.7,7.6
+"Amity University, Kolkata",West Bengal,Hotel-Management,654,670,8.2,8.1,7.7,8.4,8.8,7.4,8.5
+"Nips School Of Hotel Management, Kolkata",West Bengal,Hotel-Management,654,670,7.5,8,6.8,8,7.3,7.6,7.4
+Future Institute Of Engineering And Management,West Bengal,Hotel-Management,654,670,7.8,8.2,6.7,8.1,7.7,7.8,8.1
+Sister Nivedita University,West Bengal,Hotel-Management,654,670,8.2,8.2,7.6,8.9,7.9,7.8,8.7
+Globsyn Business School,West Bengal,Hotel-Management,654,670,8.1,8.4,7.7,8.1,8.1,8,8
+Seacom Skills University,West Bengal,Hotel-Management,654,670,7.5,8.4,6.4,8.9,7.4,6.7,7.3
+University Of Engineering And Management,West Bengal,Hotel-Management,654,670,8.1,8.6,7.2,8.5,7.9,8.8,7.7
+Jis College Of Engineering,West Bengal,Hotel-Management,654,670,7.9,8.1,7.2,8.4,8.1,7.8,8
+National Institute Of Management,West Bengal,Hotel-Management,654,670,8.5,8.4,7.4,8.8,8.7,8.7,8.9
+"Inspiria Knowledge Campus, Siliguri",West Bengal,Hotel-Management,654,670,8.1,8.1,7.4,8.4,8.6,8,8.2
+Siliguri Institute Of Technology,West Bengal,Hotel-Management,654,670,7.8,7.9,7.1,8,8.3,7.2,8.2
+International School Of Hospitality Management,West Bengal,Hotel-Management,654,670,8.8,8.6,8.6,9,8.7,8.9,9.2
+"Seacom Engineering College, Howrah",West Bengal,Hotel-Management,654,670,7.2,7.6,6.8,7.1,8,5.9,7.6
+Saroj Mohan Institute Of Technology,West Bengal,Hotel-Management,654,670,7.5,8.3,7,8.5,7.6,6.4,7.3
+Haldia Institute Of Management,West Bengal,Hotel-Management,654,670,8,8.1,7.7,8.5,7.6,7.6,8.2
+"Jis University, Kolkata",West Bengal,Hotel-Management,654,670,8,8.3,7.7,8,8.2,7.8,7.8
+International Institute Of Management Sciences,West Bengal,Hotel-Management,654,670,7.8,7.8,7.8,8,7.6,7.7,7.7
+Bengal Institute Of Technology And Management,West Bengal,Hotel-Management,654,670,6.7,6.7,6.2,7.2,6.8,6.3,7
+Institute Of Hotel Management Catering Technology &,Orissa,Hotel-Management,654,670,8.6,8.5,9,8.5,8.6,8.4,8.5
+Siksha 'O' Anusandhan University,Orissa,Hotel-Management,654,670,8.3,8.6,7.6,8.3,8.7,8,8.5
+"C. V. Raman Global University, Bhubaneswar",Orissa,Hotel-Management,654,670,7.6,7.9,7,7.5,8.2,7.5,7.6
+Bjb Autonomous College,Orissa,Hotel-Management,654,670,7.4,8.3,6.8,7.9,7.4,5.9,7.9
+Biju Patnaik University Of Technology,Orissa,Hotel-Management,654,670,6.2,6.1,6.7,6.4,6.8,4.8,6.1
+Xavier College Of Hotel Management,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Bijupattanaik College Of Hotel Management Tourism And,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"National Institute Of Hotel Management & Tourism,",Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Attitude Business School,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Driems Group Of Institutions, Cuttack",Orissa,Hotel-Management,654,670,7.6,8,7.2,7.2,9.2,6.9,6.8
+"Odm Business School, Bhubaneswar",Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Bhadrak Autonomous College, Bhadrak",Orissa,Hotel-Management,654,670,7.7,8.2,7.1,8,8,7,7.9
+Aptech Aviation And Hospitality Academy,Orissa,Hotel-Management,654,670,7.8,8,8,8,8,7,8
+Gopabandhu School Of Hotel Management,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Ranijta Institute Of Hotel Management And Catering,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+State Institute Of Hotel Management,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Utkal University Of Culture,Orissa,Hotel-Management,654,670,8.1,8,7.6,8.2,8.2,8.3,8.2
+Driems School Of Hotel Management,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Trytoon Academy,Orissa,Hotel-Management,654,670,8.8,8.2,7.4,8.2,8,7.5,8.1
+"Biitm School Of Hotel Management, Bhubaneswar",Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Imb School Of Hospitality, Bhubaneswar",Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Swosti Institute Of Management And Social Studies,Orissa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management Catering Technology &,Uttarakhand,Hotel-Management,654,670,8.7,8.8,8.8,8.8,8.3,8.7,8.8
+"Amrapali Institute Of Hotel Management, Haldwani",Uttarakhand,Hotel-Management,654,670,7.1,8.3,5.9,7.1,8.2,6.9,6.1
+Ims Unison University,Uttarakhand,Hotel-Management,654,670,8.2,8.2,8,8.5,8.5,7.5,8.2
+"Institute Of Media Management , Technology &",Uttarakhand,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Amazon Institute Of Hotel Tourism And Management,",Uttarakhand,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Doon Post Graduate College Of Agriculture Science,Uttarakhand,Hotel-Management,654,670,6.7,7.5,6.4,7.6,7,4.9,6.8
+"Uttaranchal University, Dehradun",Uttarakhand,Hotel-Management,654,670,7.5,7.8,6.8,7.7,8.6,6.5,7.5
+Graphic Era University,Uttarakhand,Hotel-Management,654,670,8.3,8.2,7.9,8.4,8.6,8.1,8.4
+Himgiri Zee University,Uttarakhand,Hotel-Management,654,670,7.9,8.5,5.5,9,8,7.7,8.8
+Institute Of Technology And Management,Uttarakhand,Hotel-Management,654,670,7.4,7.8,7.5,7.8,5.6,8,7.8
+Bfit Group Of Institutions,Uttarakhand,Hotel-Management,654,670,7.5,7.7,7.1,7.7,7.6,7.1,8
+Sardar Bhagwan Singh University,Uttarakhand,Hotel-Management,654,670,8.7,8.7,8.3,9.3,9,8.3,8.7
+"Maya Group Of Colleges, Dehradun",Uttarakhand,Hotel-Management,654,670,7.3,6.8,7.2,8.3,7.2,6.7,7.3
+Amrapali Group Of Institutes,Uttarakhand,Hotel-Management,654,670,7.8,7.8,7.5,8.2,7.5,7.8,8.1
+Hec Group Of Institutions,Uttarakhand,Hotel-Management,654,670,9,9,9,9,9,9,9
+Grd Institute Of Management And Technology,Uttarakhand,Hotel-Management,654,670,6.6,7.1,6,7.1,6.8,5.2,7.2
+Shree Dev Bhoomi Institute Of Education Science,Uttarakhand,Hotel-Management,654,670,7.3,7.7,7.3,8,7.3,5.3,8
+"Pal College Of Technology And Management, Haldwani",Uttarakhand,Hotel-Management,654,670,8.2,8.3,8.3,8.2,8.3,7.7,8.3
+Alpine Institute Of Management & Technology,Uttarakhand,Hotel-Management,654,670,7.2,7.2,7.3,7.8,7.2,6.2,7.3
+Dev Bhoomi Institute Of Management Studies,Uttarakhand,Hotel-Management,654,670,9,9,7.4,8.2,9,9,8.1
+Imperial Institute Of Management And Technology,Uttarakhand,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Maya Institute Of Technology & Management,Uttarakhand,Hotel-Management,654,670,6.9,8.6,3.7,9.3,7.6,5.5,6.5
+Swami Vivekanand Institute Of Management,Uttarakhand,Hotel-Management,654,670,9.2,8,7.4,8.2,8,7.5,8.1
+Tata Institute Of Social Sciences,Uttarakhand,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Amrapali Institute Of Applied Sciences,Uttarakhand,Hotel-Management,654,670,7.7,7,7.3,8.3,8,7,8.3
+"Dbs Pg College, Dehradun",Uttarakhand,Hotel-Management,654,670,6.9,7.8,6,8.8,5.8,4.4,8.4
+Institute Of Hotel Management Catering Technology And,Assam,Hotel-Management,654,670,8,8.1,7.6,8.5,8,8.5,7.4
+Royal Global University,Assam,Hotel-Management,654,670,7.6,7.8,6.6,8,9,6.5,7.7
+Assam Down Town University,Assam,Hotel-Management,654,670,8.2,8.4,7.6,8.4,8.2,7.8,8.6
+"Jagiroad College, Marigaon",Assam,Hotel-Management,654,670,8,8.4,7.9,8.2,8.1,6.9,8.2
+"Sibsagar Commerce College, Sibsagar",Assam,Hotel-Management,500,670,7.1,7.5,5.5,8,7.5,6.5,7.3
+Third Eye College,Assam,Hotel-Management,654,670,7.4,9,4,9,9,6,7.5
+Aihm Institute Of Tourism And Hotel Management,Assam,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Furkating College,Assam,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Advanced Management,Assam,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Jettwings Group Of Institutes, Guwahati",Assam,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Cec, Guwahati",Assam,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management,Bihar,Hotel-Management,654,670,8.8,9.4,7.8,8.7,8.8,9.1,8.7
+"Admerit College, Patna",Bihar,Hotel-Management,654,670,7.7,9,5.7,9.3,7.3,8.3,6.3
+"Patliputra University, Patna",Bihar,Hotel-Management,654,670,7.7,7.8,7.4,8.3,7.7,7,7.7
+Institute Of Hotel Management,Bihar,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"K.K. University, Nalanda",Bihar,Hotel-Management,654,670,8.6,7,7.4,8.2,8,7.5,8.1
+"Dr. Zakir Husain Institute, Patna",Bihar,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Patna Institute Of Nursing And Paramedical Science,",Bihar,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Shri Rawatpura Sarkar University,Chhattisgarh,Hotel-Management,654,670,8.5,9,8,8.5,8.5,8.5,8.5
+Maharishi University Of Management And Technology Bilaspur,Chhattisgarh,Hotel-Management,654,670,6.4,7.5,7,6,7.5,5.3,5
+"Government Db Girl'S Post Graduate College, Raipur",Chhattisgarh,Hotel-Management,654,670,3.9,6,7.4,4,4,2.5,3
+"Korba Computer College, Korba",Chhattisgarh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Bilaspur University- [Bu], Bilaspur",Chhattisgarh,Hotel-Management,654,670,6.9,7.5,5.6,7.7,6.8,6.5,7.5
+Birla Institute Of Technology,Jharkhand,Hotel-Management,654,670,8.1,8.3,7.6,7.9,8.3,8.1,8.4
+Ybn University,Jharkhand,Hotel-Management,654,670,8.2,8.5,7.5,8.5,8,8.3,8.4
+"Rkdf University, Ranchi",Jharkhand,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Radha Govind University,Jharkhand,Hotel-Management,654,670,8.6,8.9,8,8.7,8.9,8.4,8.5
+"Institute Of Management Studies, Ranchi University",Jharkhand,Hotel-Management,654,670,8.1,8.6,6.8,8.6,7.8,8,8.8
+Institute Of Science And Management,Jharkhand,Hotel-Management,654,670,8.5,8.8,7.5,8.8,9.2,8.2,8.5
+Capital University,Jharkhand,Hotel-Management,654,670,8.2,8.3,8.1,8,8.3,8.1,8.1
+Institute Of Hotel Management,Jharkhand,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Nips School Of Hotel Management, Ranchi",Jharkhand,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management Catering And Nutrition,Himachal Pradesh,Hotel-Management,654,670,8.2,8.4,7.6,8.7,8.3,8.5,7.9
+Heritage Institute Of Hotel And Tourism,Himachal Pradesh,Hotel-Management,654,670,8.8,8.7,9.3,9,8,9,9
+"Faculty Of Management Sciences And Liberal Arts,",Himachal Pradesh,Hotel-Management,654,670,8.9,8.4,8.3,9.3,8.9,9,9.5
+Indus International University,Himachal Pradesh,Hotel-Management,654,670,6.8,8,7,7,6,7,6
+Chaudhary Sarwan Kumar Himachal Pradesh Krishi Vishvavidyalaya,Himachal Pradesh,Hotel-Management,654,670,8.7,9.2,8.4,8.7,8.8,8.4,8.7
+"Shoolini University, Solan",Himachal Pradesh,Hotel-Management,654,670,8.3,8.4,7.6,8.4,8.6,8.3,8.7
+Maharishi Markandeshwar,Himachal Pradesh,Hotel-Management,654,670,8.6,9,8.2,8.9,8.2,8.4,8.9
+Baddi University Of Emerging Sciences And Technologies,Himachal Pradesh,Hotel-Management,654,670,7.1,6.7,6.9,7.2,7.3,7,7.7
+Iec University Baddi,Himachal Pradesh,Hotel-Management,654,670,7.6,7.5,7.5,7.4,7.7,8,7.5
+Career Point University,Himachal Pradesh,Hotel-Management,654,670,7.5,7.5,7.4,7,7.6,6.6,8.6
+Sri Sai University,Himachal Pradesh,Hotel-Management,654,670,7.4,7.3,6.3,8.2,7.7,6.8,8
+"Arni University, Kangra",Himachal Pradesh,Hotel-Management,654,670,8,8.2,7.4,8.1,8.4,7.7,8.4
+Bahra University,Himachal Pradesh,Hotel-Management,654,670,7.6,7.8,7.5,8,7.7,7,7.6
+Maharaja Agrasen University,Himachal Pradesh,Hotel-Management,654,670,7.5,7.7,7.5,7.6,8.7,7,6.2
+Himachal Institute Of Engineering And Technology,Himachal Pradesh,Hotel-Management,654,670,7.5,8.7,6.2,7.8,7.4,6.6,8
+"Chitkara University, Solan",Himachal Pradesh,Hotel-Management,654,670,8.2,8.2,7.5,8.2,8.4,8.8,8.3
+"Bells Institute Of Management & Technology, Shimla",Himachal Pradesh,Hotel-Management,654,670,6.8,8,8,6,8,4,7
+Arni School Of Hospitality And Tourism Management,Himachal Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+College Of Basic Sciences,Himachal Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+State Institute Of Hotel Management Catering Technology,Himachal Pradesh,Hotel-Management,654,670,9.1,8.2,7.4,8.2,8,7.5,8.1
+Himachal Pradesh Technical University,Himachal Pradesh,Hotel-Management,654,670,8.2,8.3,7.5,8.5,8.4,8.1,8.4
+Himachal Pradesh University,Himachal Pradesh,Hotel-Management,654,670,7.2,7.7,6.7,7.7,7.3,6.1,7.7
+"Sheds College Of Hospitality Management, Solan",Himachal Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Kc Group Of Institutions, Una",Himachal Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management Catering Technology And,Jammu,Hotel-Management,654,670,7.2,7,8,7.8,8,7,5.3
+"Government College For Women, Srinagar",Jammu,Hotel-Management,654,670,6.8,7,7,7,8,3.5,8.5
+Baba Ghulam Shah Badshah University,Jammu,Hotel-Management,654,670,7.2,7.9,7.6,7.4,7.1,5.9,7.1
+Central University Of Kashmir,Jammu,Hotel-Management,654,670,7.8,8.2,7.8,8.4,7.2,7.4,7.6
+Dr.Ambedkar Institute Of Hotel Management Catering And,Chandigarh,Hotel-Management,654,670,8.4,8.8,7.7,8.8,8.4,8.7,7.7
+Chandigarh Institute Of Hotel Management And Catering,Chandigarh,Hotel-Management,654,670,8.3,8.8,8.3,7.9,8.9,8.7,7
+"Chitkara School Of Hospitality -[Csh], Chandigarh",Chandigarh,Hotel-Management,654,670,8.4,8.7,7,9,8.3,8.7,8.5
+Hotel & Catering Management Institute,Chandigarh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Panjab University,Chandigarh,Hotel-Management,654,670,7.7,8.2,7.7,8,7.7,6.5,8.2
+"Iitt Institutions, Chandigarh",Chandigarh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Indira Gandhi Institute Of Aeronautics,Chandigarh,Hotel-Management,654,670,8.8,8.2,7.4,8.2,8,7.5,8.1
+"Uei Global, Chandigarh",Chandigarh,Hotel-Management,654,670,8.3,8.2,8.3,8.3,8.5,8.5,8.2
+Swami Vivekanand Group Of Institutes,Chandigarh,Hotel-Management,654,670,8.5,9,7.8,8.2,9,8.1,8.1
+Institute Of Hotel Management Catering Technology And Applied Nutrition,Goa,Hotel-Management,654,670,8.2,7.9,7.5,8.3,8.5,8.5,8.7
+"Ann Institute Of Hotel Management And Catering Technology, North Goa",Goa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Goa College Of Hospitality And Culinary Education , North Goa",Goa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Guardian Angel Institute Of Hotel Management And Catering Technology,Goa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"S. S. Dempo College Of Commerce And Economics, Panji",Goa,Hotel-Management,654,670,6.6,7.3,4.8,6.8,7.5,6.3,7
+Enviroskills Academy,Goa,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+International Institute Of Hotel Management,Goa,Hotel-Management,654,670,8.7,8.5,8.5,8.9,8.5,9.1,8.6
+"Arunodaya University, Itanagar",Arunachal Pradesh,Hotel-Management,654,670,8.4,9,8.5,8.2,9,7.5,7.9
+Himalayan University,Arunachal Pradesh,Hotel-Management,654,670,8.6,8.6,8,8.9,9.1,8.1,9
+Apex Professional University,Arunachal Pradesh,Hotel-Management,654,670,7.4,7.5,7.5,7.5,7.5,7.5,7
+Arunachal University Of Studies,Arunachal Pradesh,Hotel-Management,654,670,8.3,8.7,7.9,8.4,8.1,8.2,8.4
+North East Frontier Technical University,Arunachal Pradesh,Hotel-Management,654,670,8.3,9,7.6,8.5,8.2,8.7,8
+Venkateshwara Open University,Arunachal Pradesh,Hotel-Management,654,670,7.9,8.3,7.3,8.5,7.5,7.8,8.2
+Rajiv Gandhi Government Polytechnic,Arunachal Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"The Global University, Itanagar",Arunachal Pradesh,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Cmj University, Ri-Bhoi",Meghalaya,Hotel-Management,654,670,8.3,8.8,7.8,8.5,7.8,8.2,8.6
+Mahatma Gandhi University,Meghalaya,Hotel-Management,654,670,8.1,9,7,9,9,6.3,8.4
+William Carey University,Meghalaya,Hotel-Management,654,670,8.5,9.2,8.4,8.4,8.2,8.1,8.6
+"Institute Of Hotel Management Catering Technology And Applied Nutrition, Shillong",Meghalaya,Hotel-Management,654,670,8.1,8,7.5,8.3,8.5,8.4,8.1
+"Icfai University, Dimapur",Nagaland,Hotel-Management,654,670,7.4,7.1,7.1,7.8,8.2,7,7.3
+The Global Open University,Nagaland,Hotel-Management,654,670,7.8,8.9,7.3,8.4,7.6,7.3,7.4
+Pondicherry Institute Of Hotel Management & Catering Technology,Puducherry,Hotel-Management,654,670,7.6,8,7.5,8,7.5,7.5,7
+Achariya School Tourism And Hotel Management,Puducherry,Hotel-Management,654,670,9.3,8.2,7.4,8.2,8,7.5,8.1
+"Icfai University, Gangtok",Sikkim,Hotel-Management,654,670,6.8,6.7,6.8,7,6.7,7,6.6
+"Institute Of Hotel Management, Gangtok",Sikkim,Hotel-Management,654,670,7.7,8,7,8,8,8,7
+"Bir Tikendrajit University, Imphal",Manipur,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+"Dr. B R Ambedkar Institute Of Technology, Port Blair",Andaman,Hotel-Management,654,670,7.9,8.2,7.4,8.2,8,7.5,8.1
+Institute Of Hotel Management And Catering Technology,Dadra,Hotel-Management,654,670,7.7,7,7,8.2,8.5,8,7.4
