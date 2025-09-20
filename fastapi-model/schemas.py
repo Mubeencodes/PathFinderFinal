@@ -21,3 +21,7 @@ class CounselResponse(BaseModel):
 
 class CounselTextResponse(BaseModel):
     recommendation: str
+
+class CombinedResponse(BaseModel):
+    ml: List[CollegeRecommendation]
+    llm: str

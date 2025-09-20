@@ -5,6 +5,9 @@ import json
 import os
 
 
+
+
+
 def create_and_save_embeddings():
     CSV_PATH = r"data/New folder/Engineering.csv"
     EMBEDDINGS_PATH = r"data/embed.npy"
