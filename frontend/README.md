@@ -1,31 +1,15 @@
-# Welcome to PathFinder!
+# React + TypeScript + Tailwind Frontend
 
-If you want to run locally using your own IDE, you can clone this repo.
+## Quick start
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Copy `.env.example` to `.env` and set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` .
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start server:
+   ```bash
+   npm run dev
+   ```
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The server runs on `http://localhost:8080` by default.

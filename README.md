@@ -1,20 +1,33 @@
-Fullstack Project (frontend + backend)
+# Welcome to PathFinder!
 
-Folders:
- - backend: Node.js + Express + MongoDB backend. See backend/README.md for details.
- - frontend: React + Vite frontend. Runs on port 8080.
+If you want to run locally using your own IDE, you can clone this repo.
 
-Quick start:
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-1. Backend:
-   - cd backend
-   - set .env files
-   - npm install
-   - npm run dev   # or npm start
+Follow these steps:
 
-2. Frontend:
-   - cd frontend
-   - npm install
-   - npm run dev
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Open http://localhost:8080 (frontend). Backend API is at http://localhost:5000/api
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+# follow the README files in backend and frontend
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+- Supabase
+- Node + Express
