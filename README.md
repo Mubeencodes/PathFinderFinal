@@ -10,10 +10,11 @@ Quick start:
    - cd backend
    - set .env files
    - npm install
-   - npm run dev   # or npm start
+   - npm run dev
 
 2. Frontend:
    - cd frontend
+   - set .env files
    - npm install
    - npm run dev
 
