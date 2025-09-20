@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -24,138 +24,69 @@ import {
   GraduationCap,
   Users,
   DollarSign,
+  Loader2,
 } from "lucide-react";
+import { fetchColleges, compareColleges } from "@/lib/api";
 
 interface College {
-  id: number;
+  id: string;
   name: string;
   location: string;
+  state: string;
+  city: string;
   type: "Government" | "Private";
+  stream: string;
   rating: number;
-  fees: string;
-  cutoff: string;
-  distance: string;
+  ug_fee: number;
+  pg_fee: number;
+  cutoff_requirements?: string;
   courses: string[];
   facilities: string[];
-  placements: {
-    percentage: number;
-    averagePackage: string;
-    topPackage: string;
-  };
-  intake: number;
-  established: number;
+  placement_percentage?: number;
+  average_package?: string;
+  highest_package?: string;
+  intake?: number;
+  established_year?: number;
 }
 
-const availableColleges: College[] = [
-  {
-    id: 1,
-    name: "IIT Delhi",
-    location: "New Delhi, Delhi",
-    type: "Government",
-    rating: 4.9,
-    fees: "₹2,50,000/year",
-    cutoff: "JEE Advanced - 150+",
-    distance: "8.1 km",
-    courses: ["B.Tech CSE", "B.Tech EE", "B.Tech ME"],
-    facilities: [
-      "Research Labs",
-      "Hostel",
-      "Sports Complex",
-      "Medical Center",
-      "Library",
-    ],
-    placements: {
-      percentage: 95,
-      averagePackage: "₹17 LPA",
-      topPackage: "₹1.2 Cr",
-    },
-    intake: 1000,
-    established: 1961,
-  },
-  {
-    id: 2,
-    name: "Delhi University - SRCC",
-    location: "New Delhi, Delhi",
-    type: "Government",
-    rating: 4.7,
-    fees: "₹25,000/year",
-    cutoff: "98%+ in Class 12",
-    distance: "5.2 km",
-    courses: ["B.Com Hons", "B.A. Economics", "B.Sc. Statistics"],
-    facilities: ["Library", "Sports Complex", "Auditorium", "Canteen", "Wi-Fi"],
-    placements: {
-      percentage: 90,
-      averagePackage: "₹8 LPA",
-      topPackage: "₹25 LPA",
-    },
-    intake: 600,
-    established: 1926,
-  },
-  {
-    id: 3,
-    name: "Amity University",
-    location: "Noida, UP",
-    type: "Private",
-    rating: 4.2,
-    fees: "₹3,50,000/year",
-    cutoff: "75%+ in Class 12",
-    distance: "12.5 km",
-    courses: ["B.Tech", "BBA", "B.Com", "BA"],
-    facilities: [
-      "Modern Campus",
-      "Industry Partnerships",
-      "Placement Cell",
-      "International Programs",
-      "Hostels",
-    ],
-    placements: {
-      percentage: 85,
-      averagePackage: "₹6 LPA",
-      topPackage: "₹15 LPA",
-    },
-    intake: 2000,
-    established: 2005,
-  },
-  {
-    id: 4,
-    name: "Jamia Millia Islamia",
-    location: "New Delhi, Delhi",
-    type: "Government",
-    rating: 4.5,
-    fees: "₹25,000/year",
-    cutoff: "85%+ in Class 12",
-    distance: "7.8 km",
-    courses: ["B.A.", "B.Sc.", "B.Tech", "B.Arch"],
-    facilities: [
-      "Central Library",
-      "Hostels",
-      "Medical Center",
-      "Sports Facilities",
-      "Mosque",
-    ],
-    placements: {
-      percentage: 80,
-      averagePackage: "₹5 LPA",
-      topPackage: "₹12 LPA",
-    },
-    intake: 1500,
-    established: 1920,
-  },
-];
+// Remove mock data - will be fetched from API
 
 export default function Compare() {
   const [selectedColleges, setSelectedColleges] = useState<College[]>([]);
-  const [availableToAdd, setAvailableToAdd] = useState(availableColleges);
+  const [availableToAdd, setAvailableToAdd] = useState<College[]>([]);
+  const [allColleges, setAllColleges] = useState<College[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch colleges on component mount
+  useEffect(() => {
+    const fetchCollegesData = async () => {
+      try {
+        setLoading(true);
+        const response = await fetchColleges({ limit: 100 });
+
+        if (response.data.success) {
+          setAllColleges(response.data.data);
+          setAvailableToAdd(response.data.data);
+        }
+      } catch (error) {
+        console.error("Error fetching colleges:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCollegesData();
+  }, []);
 
   const addCollege = (collegeId: string) => {
-    const college = availableToAdd.find((c) => c.id.toString() === collegeId);
+    const college = availableToAdd.find((c) => c.id === collegeId);
     if (college && selectedColleges.length < 3) {
       setSelectedColleges([...selectedColleges, college]);
       setAvailableToAdd(availableToAdd.filter((c) => c.id !== college.id));
     }
   };
 
-  const removeCollege = (collegeId: number) => {
+  const removeCollege = (collegeId: string) => {
     const college = selectedColleges.find((c) => c.id === collegeId);
     if (college) {
       setSelectedColleges(selectedColleges.filter((c) => c.id !== collegeId));
@@ -165,15 +96,15 @@ export default function Compare() {
 
   const comparisonRows = [
     { label: "Type", key: "type" },
+    { label: "Stream", key: "stream" },
     { label: "Rating", key: "rating" },
-    { label: "Annual Fees", key: "fees" },
-    { label: "Cutoff Requirements", key: "cutoff" },
-    { label: "Distance from you", key: "distance" },
+    { label: "UG Fees", key: "ug_fee" },
+    { label: "Cutoff Requirements", key: "cutoff_requirements" },
     { label: "Student Intake", key: "intake" },
-    { label: "Established", key: "established" },
-    { label: "Placement %", key: "placementPercentage" },
-    { label: "Average Package", key: "averagePackage" },
-    { label: "Highest Package", key: "topPackage" },
+    { label: "Established", key: "established_year" },
+    { label: "Placement %", key: "placement_percentage" },
+    { label: "Average Package", key: "average_package" },
+    { label: "Highest Package", key: "highest_package" },
   ];
 
   const getComparisonValue = (college: College, key: string) => {
@@ -193,14 +124,22 @@ export default function Compare() {
             <span>{college.rating}</span>
           </div>
         );
-      case "placementPercentage":
-        return `${college.placements.percentage}%`;
-      case "averagePackage":
-        return college.placements.averagePackage;
-      case "topPackage":
-        return college.placements.topPackage;
+      case "ug_fee":
+        return `₹${college.ug_fee?.toLocaleString()}/year`;
+      case "placement_percentage":
+        return `${college.placement_percentage || "N/A"}%`;
+      case "average_package":
+        return college.average_package || "N/A";
+      case "highest_package":
+        return college.highest_package || "N/A";
       case "intake":
-        return college.intake.toLocaleString();
+        return college.intake?.toLocaleString() || "N/A";
+      case "established_year":
+        return college.established_year || "N/A";
+      case "cutoff_requirements":
+        return college.cutoff_requirements || "N/A";
+      case "stream":
+        return college.stream;
       default:
         return college[key as keyof College] as React.ReactNode;
     }
@@ -220,8 +159,15 @@ export default function Compare() {
         </p>
       </div>
 
+      {/* Loading State */}
+      {loading && (
+        <div className="flex justify-center items-center py-12">
+          <Loader2 className="h-8 w-8 animate-spin text-primary" />
+        </div>
+      )}
+
       {/* Add College Section */}
-      {selectedColleges.length < 3 && (
+      {!loading && selectedColleges.length < 3 && (
         <Card className="shadow-medium mb-8">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -239,7 +185,7 @@ export default function Compare() {
               </SelectTrigger>
               <SelectContent>
                 {availableToAdd.map((college) => (
-                  <SelectItem key={college.id} value={college.id.toString()}>
+                  <SelectItem key={college.id} value={college.id}>
                     {college.name} - {college.location}
                   </SelectItem>
                 ))}
@@ -289,8 +235,10 @@ export default function Compare() {
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm">Fees:</span>
-                    <span className="text-sm font-medium">{college.fees}</span>
+                    <span className="text-sm">UG Fees:</span>
+                    <span className="text-sm font-medium">
+                      ₹{college.ug_fee?.toLocaleString()}/year
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -300,7 +248,7 @@ export default function Compare() {
       )}
 
       {/* Comparison Table */}
-      {selectedColleges.length >= 2 && (
+      {!loading && selectedColleges.length >= 2 && (
         <Card className="shadow-strong">
           <CardHeader>
             <CardTitle className="text-xl text-foreground">
@@ -409,7 +357,7 @@ export default function Compare() {
       )}
 
       {/* No Colleges Selected */}
-      {selectedColleges.length === 0 && (
+      {!loading && selectedColleges.length === 0 && (
         <Card className="text-center py-12">
           <CardContent>
             <BarChart3 className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
@@ -424,7 +372,7 @@ export default function Compare() {
       )}
 
       {/* Single College Selected */}
-      {selectedColleges.length === 1 && (
+      {!loading && selectedColleges.length === 1 && (
         <Card className="text-center py-12 bg-primary/5">
           <CardContent>
             <BarChart3 className="h-16 w-16 text-primary mx-auto mb-4" />

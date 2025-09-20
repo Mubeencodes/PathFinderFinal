@@ -58,3 +58,28 @@ export const deleteSession = (id: string) =>
 export const logoutUser = () => {
   localStorage.removeItem("token");
 };
+
+// College API functions
+export const fetchColleges = (params?: {
+  stream?: string;
+  type?: string;
+  state?: string;
+  city?: string;
+  search?: string;
+  limit?: number;
+  offset?: number;
+  sort_by?: string;
+  sort_order?: string;
+}) => instance.get("/api/colleges", { params });
+
+export const fetchCollegeById = (id: string) =>
+  instance.get(`/api/colleges/${id}`);
+
+export const compareColleges = (collegeIds: string[]) =>
+  instance.post("/api/colleges/compare", { collegeIds });
+
+export const fetchFilterOptions = () =>
+  instance.get("/api/colleges/filters/options");
+
+export const searchColleges = (query: string, limit?: number) =>
+  instance.get(`/api/colleges/search/${query}`, { params: { limit } });

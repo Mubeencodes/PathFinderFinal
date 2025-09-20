@@ -47,6 +47,7 @@ app.use(express.json());
 app.use("/api", require("./routes/auth"));
 app.use("/api/reports", require("./routes/reports"));
 app.use("/api/sessions", require("./routes/sessions"));
+app.use("/api/colleges", require("./routes/colleges"));
 
 app.get("/", (req, res) =>
   res.send({ ok: true, message: "Backend is running" })
