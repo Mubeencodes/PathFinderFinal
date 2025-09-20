@@ -216,12 +216,6 @@ dmypy.json
 *.npy
 *.npz
 
-# Specific large files that exceed GitHub limits
-fastapi/data/embed.npy
-fastapi/data/rf_college_predictor.pkl
-fastapi/college_eligibility_predictor.pkl
-fastapi/college_predictor.pkl
-
 # Database files
 *.db
 *.sqlite
