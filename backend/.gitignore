@@ -13,7 +13,6 @@ pids/
 
 # Env/Secrets
 .env
-.env.*.local
 .env.local
 
 # Coverage/Build

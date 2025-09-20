@@ -14,7 +14,7 @@ dist/
 # Env
 .env
 .env.local
-.env.*.local
+
 
 # Test/Coverage
 coverage/
