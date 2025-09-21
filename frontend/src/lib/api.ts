@@ -83,3 +83,12 @@ export const fetchFilterOptions = () =>
 
 export const searchColleges = (query: string, limit?: number) =>
   instance.get(`/api/colleges/search/${query}`, { params: { limit } });
+
+// Counseling API functions
+export const getCollegeRecommendations = (data: {
+  interests: string[];
+  board_marks?: number | null;
+  entrance_exam_rank: number;
+}) => {
+  return axios.post("http://127.0.0.1:8000/counseling/combined", data);
+};

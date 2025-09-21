@@ -1,15 +1,14 @@
-import json
 import logging  # Import logging
-from fastapi import FastAPI, Depends
-from schemas import CounselRequest, CollegeRecommendation, CombinedResponse
+
+import joblib
+import pandas as pd
 from ai.ollamas import Ollama
 from ai.retrieve import Retriever
 from auth.dependencies import get_user_identifier
 from auth.throttling import apply_rate_limit
-import joblib
-import pandas as pd
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List
+from schemas import CollegeRecommendation, CombinedResponse, CounselRequest
 
 # --- Basic Logging Setup ---
 logging.basicConfig(level=logging.INFO)
@@ -18,8 +17,13 @@ app = FastAPI()
 
 # --- CORS Setup ---
 origins = [
-    "http://localhost:8080",
-    "http://localhost:5000"
+    "http://localhost:8080", 
+    "http://localhost:8081", 
+    "http://localhost:5000",
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173"
 ]
 
 app.add_middleware(
@@ -42,7 +46,7 @@ def load_system_prompt():
 
 
 SYSTEM_PROMPT = load_system_prompt()
-ai_platform = Ollama(model="mistral")
+ai_platform = Ollama(model="mistral:latest")
 
 # --- Retriever Initialization ---
 retriever = None
@@ -63,32 +67,48 @@ except Exception as e:
 
 # --- Combined Endpoint ---
 @app.post("/counseling/combined", response_model=CombinedResponse)
-async def combined_counseling(request: CounselRequest, user_id: str = Depends(get_user_identifier)):
+async def combined_counseling(
+    request: CounselRequest, user_id: str = Depends(get_user_identifier)
+):
+    print(request)
     logging.info("Combined counseling endpoint hit.")
     apply_rate_limit(user_id)
 
     if not retriever or not ml_model:
         error_detail = retriever_error or "ML model not loaded."
-        return CombinedResponse(ml=[], llm=f"Error: The recommendation engine is not available. Details: {error_detail}")
+        return CombinedResponse(
+            ml=[],
+            llm=f"Error: The recommendation engine is not available. Details: {error_detail}",
+        )
 
     query = ", ".join(request.interests)
     candidates = retriever.find_similar_colleges(query, top_k=20)
 
     if not candidates:
-        return CombinedResponse(ml=[], llm="No suitable colleges found based on your interests.")
+        return CombinedResponse(
+            ml=[], llm="No suitable colleges found based on your interests."
+        )
 
     df_candidates = pd.DataFrame(candidates)
-    X_new = pd.DataFrame({
-        "student_rank": [request.entrance_exam_rank] * len(df_candidates),
-        "program_name": df_candidates.get("program_name", df_candidates.get("name")),
-        "category": df_candidates.get("category", "GEN"),
-    })
+    X_new = pd.DataFrame(
+        {
+            "student_rank": [request.entrance_exam_rank] * len(df_candidates),
+            "program_name": df_candidates.get(
+                "program_name", df_candidates.get("name")
+            ),
+            "category": df_candidates.get("category", "GEN"),
+        }
+    )
 
     probs = ml_model.predict_proba(X_new)[:, 1]
     df_candidates["eligibility_prob"] = probs
-    top_ml_colleges = df_candidates.sort_values("eligibility_prob", ascending=False).head(3)
+    top_ml_colleges = df_candidates.sort_values(
+        "eligibility_prob", ascending=False
+    ).head(3)
 
-    ml_recommendations = [CollegeRecommendation(**row) for _, row in top_ml_colleges.iterrows()]
+    ml_recommendations = [
+        CollegeRecommendation(**row) for _, row in top_ml_colleges.iterrows()
+    ]
     logging.info("ML recommendations generated.")
 
     # === LLM Logic ===
@@ -108,10 +128,7 @@ async def combined_counseling(request: CounselRequest, user_id: str = Depends(ge
     llm_counseling_text = await ai_platform.chat(full_prompt)
     logging.info("LLM counseling generated.")
 
-    return CombinedResponse(
-        ml=ml_recommendations,
-        llm=llm_counseling_text
-    )
+    return CombinedResponse(ml=ml_recommendations, llm=llm_counseling_text)
 
 
 # --- Root Endpoint ---

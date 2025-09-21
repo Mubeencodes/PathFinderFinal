@@ -1,11 +1,9 @@
-import pandas as pd
-from sentence_transformers import SentenceTransformer
-import numpy as np
 import json
 import os
 
-
-
+import numpy as np
+import pandas as pd
+from sentence_transformers import SentenceTransformer
 
 
 def create_and_save_embeddings():
@@ -27,9 +25,13 @@ def create_and_save_embeddings():
     # Build description used for embeddings
     df["full_description"] = (
         df["institute_short"].astype(str)
-        + " offers " + df["program_name"].astype(str)
-        + " (" + df["category"].astype(str) + ") "
-        + " with closing rank " + df["closing_rank"].astype(str)
+        + " offers "
+        + df["program_name"].astype(str)
+        + " ("
+        + df["category"].astype(str)
+        + ") "
+        + " with closing rank "
+        + df["closing_rank"].astype(str)
     )
 
     print("Loading embedding model (this may take a moment)...")
@@ -46,7 +48,9 @@ def create_and_save_embeddings():
     with open(JSON_DATA_PATH, "w") as f:
         json.dump(college_data, f, indent=2)
 
-    print(f"Saved {len(college_data)} rows with embeddings + metadata to {JSON_DATA_PATH}")
+    print(
+        f"Saved {len(college_data)} rows with embeddings + metadata to {JSON_DATA_PATH}"
+    )
 
 
 if __name__ == "__main__":
